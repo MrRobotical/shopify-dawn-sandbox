@@ -19,38 +19,37 @@
   
   {% schema %}
   {
-    "name": "Custom Product Slider",
-    "class": "product-slider",
-    "max-blocks": 10,
-    "settings": [
-      {
-        "type": "text",
-        "label": "Title",
-        "id": "title",
-        "default": "Featured Products"
-      }
+    "name":"Custom Product Slider",
+    "class":"product-slider",
+    "max-blocks":10,
+    "settings":[
+       {
+          "type":"text",
+          "label":"Title",
+          "id":"title",
+          "default":"Featured Products"
+       }
     ],
-    "blocks": [
-      {
-        "type": "product",
-        "name": "Products",
-        "settings": [
-          {
-            "type": "product_picker",
-            "label": "Select Products",
-            "id": "product_picker",
-            "info": "Select the products to display",
-          }
-        ]
-      }
+    "blocks":[
+       {
+          "type":"product",
+          "name":"Products",
+          "settings":[
+             {
+                "type":"product_picker",
+                "label":"Select Products",
+                "id":"product_picker",
+                "info":"Select the products to display"
+             }
+          ]
+       }
     ],
-    "presets": [
-      {
-        "name": "Custom Product Slider",
-        "category": "Custom"
-      }
+    "presets":[
+       {
+          "name":"Custom Product Slider",
+          "category":"Custom"
+       }
     ]
-  }
-  
+ }
   {% endschema %}
   
