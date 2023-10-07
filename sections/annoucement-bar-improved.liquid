@@ -1,0 +1,97 @@
+{% schema %}
+{
+  "name": "t:sections.announcement-bar-improved.name",
+  "max_blocks": 1,
+  "class": "announcement-bar-improved-section",
+  "enabled_on": {
+    "groups": ["header"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "custom_text",
+      "label": "Custom Text",
+      "default": "Welcome to the Improved Announcement Bar",
+      "info": "Enter the custom text for the announcement bar."
+    },
+    {
+      "type": "color_scheme",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "accent-1",
+      "info": "Choose the color for the text in the announcement bar."
+    },
+    {
+      "type": "gradient",
+      "id": "background_gradient",
+      "label": "Background Gradient",
+      "default": {
+        "from": "#ffffff",
+        "to": "#f0f0f0"
+      },
+      "info": "Select the background gradient for the announcement bar."
+    },
+    {
+      "type": "header",
+      "content": "Add Icons"
+    },
+    {
+      "type": "icon_picker",
+      "id": "icon_1",
+      "label": "Icon 1",
+      "info": "Select an icon for the first headline."
+    },
+    {
+      "type": "icon_picker",
+      "id": "icon_2",
+      "label": "Icon 2",
+      "info": "Select an icon for the second headline."
+    },
+    {
+      "type": "icon_picker",
+      "id": "icon_3",
+      "label": "Icon 3",
+      "info": "Select an icon for the third headline."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "announcement",
+      "name": "t:sections.announcement-bar-improved.blocks.announcement.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "headline_1",
+          "label": "Headline 1",
+          "default": "Headline 1",
+          "info": "Enter the text for the first headline."
+        },
+        {
+          "type": "text",
+          "id": "headline_2",
+          "label": "Headline 2",
+          "default": "Headline 2",
+          "info": "Enter the text for the second headline."
+        },
+        {
+          "type": "text",
+          "id": "headline_3",
+          "label": "Headline 3",
+          "default": "Headline 3",
+          "info": "Enter the text for the third headline."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.announcement-bar-improved.presets.name",
+      "blocks": [
+        {
+          "type": "announcement"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
