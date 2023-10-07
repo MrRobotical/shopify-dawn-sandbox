@@ -16,37 +16,30 @@
   </div>
   
 
-{% schema %}
-{
-    "name": "Product Slider",
-    "class": "product-slider",
-    "settings": [
-      {
-        "type": "text",
-        "label": "Title",
-        "id": "title",
-        "default": "Featured Products"
-      }
-    ],
-    "blocks": [
-      {
-        "type": "product",
-        "name": "Products",
-        "settings": [
-          {
-            "type": "product",
-            "label": "Product",
-            "id": "product",
-          }
-        ]
-      }
-    ],
-    "presets": [
-      {
-        "name": "Default",
-        "category": "Custom"
-      }
-    ]
+  {% schema %}
+  {
+      "name": "Product Slider",
+      "class": "product-slider",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Title",
+          "id": "title",
+          "default": "Featured Products"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "product",
+          "name": "Products",
+          "settings": []
+        }
+      ],
+      "presets": [
+        {
+          "name": "Default",
+          "category": "Custom"
+        }
+      ]
   }
-  
-{% endschema %}
+  {% endschema %}
