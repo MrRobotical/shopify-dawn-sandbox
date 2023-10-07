@@ -1,12 +1,19 @@
-<h1>Product Slider Test</h1>
+<h1>{{ section.settings.heading}}</h1>
 
 {% schema %}
   {
     "name": "Custom Product Slider",
-    "settings": [],
+    "settings": [
+        {
+        "type": "text", 
+        "id": "heading",
+        "label": "Heading", 
+        "default": "Custom Heading"
+    }
+    ],
     "presets": [
         {
-        "name":"Product Slider"
+        "name":"Custom Product Slider"
     }
     ]
   }
