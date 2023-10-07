@@ -1,40 +1,44 @@
-{{ 'brand-carousel.css' | asset_url | stylesheet_tag }}
-
-<div class="brand-carousel">
-  <div class="brand-carousel-container">
-    <div class="brand-carousel-track">
-      {% for block in section.blocks %}
-        <div class="brand-carousel-item">
-          <img src="{{ block.settings.logo | img_url: '50x50' }}" alt="{{ block.settings.alt_text }}" />
-        </div>
-      {% endfor %}
-    </div>
+<div class="featured-product">
+  <div class="featured-product__image">
+    <img src="{{ section.settings.product_image | img_url: '400x400' }}" alt="{{ featured_product.title }}" />
+  </div>
+  <div class="featured-product__info">
+    <h2 class="featured-product__title">{{ featured_product.title }}</h2>
+    <p class="featured-product__price">{{ featured_product.price | money }}</p>
+    {% if section.settings.display_description %}
+      <p class="featured-product__description">{{ featured_product.description }}</p>
+    {% endif %}
   </div>
 </div>
 
-{% schema %}
-
 {
-  "name": "Brand Carousel",
-  "class": "brand-carousel",
-  "max_blocks": 10,
+  "name": "Featured Product",
+  "class": "featured-product",
+  "max_blocks": 1,
   "blocks": [
     {
-      "type": "brand",
-      "name": "Brand Logo",
+      "type": "product",
+      "name": "Featured Product",
       "settings": [
         {
-          "type": "image",
-          "id": "logo",
-          "label": "Brand Logo",
-          "info": "Upload your brand logo. It will be resized to 50px x 50px.",
+          "type": "product",
+          "id": "product",
+          "label": "Select a Product",
+          "info": "Choose the product you want to feature on your homepage.",
           "required": true
         },
         {
-          "type": "text",
-          "id": "alt_text",
-          "label": "Alt Text",
-          "info": "Provide alternative text for the logo (for accessibility)."
+          "type": "image_picker",
+          "id": "product_image",
+          "label": "Product Image",
+          "info": "Select an image to represent the featured product (400x400 pixels recommended)."
+        },
+        {
+          "type": "checkbox",
+          "id": "display_description",
+          "label": "Display Product Description",
+          "default": false,
+          "info": "Check to display the product description below the product details."
         }
       ]
     }
@@ -44,26 +48,5 @@
       "name": "Default",
       "category": "Custom"
     }
-  ],
-  "settings": [
-    {
-      "type": "checkbox",
-      "id": "auto_scroll",
-      "label": "Auto Scroll",
-      "default": true,
-      "info": "Enable auto-scrolling of brand logos in the carousel."
-    },
-    {
-      "type": "range",
-      "id": "scroll_speed",
-      "label": "Scroll Speed",
-      "min": 1,
-      "max": 10,
-      "step": 1,
-      "default": 3,
-      "info": "Set the scroll speed (higher value means faster scrolling)."
-    }
   ]
 }
-
-{% endschema %}
