@@ -67,15 +67,16 @@
         "padding_bottom": 36
       }
     },
-    "755c9508-26da-4b3c-9ec3-7b36624b42f5": {
+    "85fa64fa-03fe-4617-b76d-5d456cca82dd": {
       "type": "product-slider",
       "settings": {
+        "heading": "New Heading"
       }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
-    "755c9508-26da-4b3c-9ec3-7b36624b42f5"
+    "85fa64fa-03fe-4617-b76d-5d456cca82dd"
   ]
 }
