@@ -11,10 +11,18 @@
             "text": "Welcome to the Dawn Sandbox",
             "link": ""
           }
+        },
+        "7d787dfc-07a2-42ac-962c-286f19e0e999": {
+          "type": "announcement",
+          "settings": {
+            "text": "Announcement Bar 2",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "announcement-bar-0",
+        "7d787dfc-07a2-42ac-962c-286f19e0e999"
       ],
       "settings": {
         "color_scheme": "background-1",
