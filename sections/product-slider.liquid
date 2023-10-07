@@ -15,31 +15,39 @@
     </div>
   </div>
   
-
   {% schema %}
   {
-      "name": "Custom Product Slider",
-      "class": "product-slider",
-      "settings": [
-        {
-          "type": "text",
-          "label": "Title",
-          "id": "title",
-          "default": "Featured Products"
-        }
-      ],
-      "blocks": [
-        {
-          "type": "product",
-          "name": "Products",
-          "settings": []
-        }
-      ],
-      "presets": [
-        {
-          "name": "Custom Product Slider",
-          "category": "Custom"
-        }
-      ]
+    "name": "Custom Product Slider",
+    "class": "product-slider",
+    "settings": [
+      {
+        "type": "text",
+        "label": "Title",
+        "id": "title",
+        "default": "Featured Products"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "product",
+        "name": "Products",
+        "settings": [
+          {
+            "type": "product_picker",
+            "label": "Select Products",
+            "id": "selected_products",
+            "info": "Select the products to display in the slider",
+            "max": 10
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom Product Slider 2",
+        "category": "Custom"
+      }
+    ]
   }
   {% endschema %}
+  
