@@ -1,21 +1,53 @@
-<div class="basic-section">
-  <h2>Welcome to our Shopify Store!</h2>
-  <p>This is a super basic Shopify section.</p>
-</div>
+<!-- product-slider.liquid -->
+
+<div class="product-slider">
+    <h2>{{ section.settings.title }}</h2>
+    <div class="product-slider-container">
+      {% for product in section.blocks.products %}
+        <div class="product-slide">
+          <a href="{{ product.url }}">
+            <img src="{{ product.featured_image | img_url: '500x500' }}" alt="{{ product.title }}" />
+            <h3>{{ product.title }}</h3>
+            <p>{{ product.price | money }}</p>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  
 
 {% schema %}
-
 {
-    "name": "Basic Section",
-    "class": "basic-section",
-    "settings": [],
-    "blocks": [],
+    "name": "Product Slider",
+    "class": "product-slider",
+    "settings": [
+      {
+        "type": "text",
+        "label": "Title",
+        "id": "title",
+        "default": "Featured Products"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "products",
+        "name": "Products",
+        "settings": [
+          {
+            "type": "product",
+            "label": "Product",
+            "id": "product",
+            "max_items": 10
+          }
+        ]
+      }
+    ],
     "presets": [
       {
-        "name": "Is this working?",
+        "name": "Default",
         "category": "Custom"
       }
     ]
   }
-
-  {% endschema %}
+  
+{% endschema %}
