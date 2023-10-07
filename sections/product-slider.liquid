@@ -1,11 +1,9 @@
 <!-- product-slider.liquid -->
 
-<!-- product-slider.liquid -->
-
 <div class="product-slider">
     <h2>{{ section.settings.title }}</h2>
     <div class="product-slider-container">
-      {% for product in section.blocks.products.selected_products %}
+      {% for product in section.blocks.products %}
         <div class="product-slide">
           <a href="{{ product.url }}">
             <img src="{{ product.featured_image | img_url: '500x500' }}" alt="{{ product.title }}" />
@@ -19,36 +17,29 @@
   
   {% schema %}
   {
-    "name":"Custom Product Slider",
-    "class":"product-slider",
-    "settings":[
-       {
-          "type":"text",
-          "label":"Title",
-          "id":"title",
-          "default":"Featured Products"
-       }
+    "name": "Custom Product Slider",
+    "class": "product-slider",
+    "settings": [
+      {
+        "type": "text",
+        "label": "Title",
+        "id": "title",
+        "default": "Featured Products"
+      }
     ],
-    "blocks":[
-       {
-          "type":"product",
-          "name":"Products",
-          "settings":[
-             {
-                "type":"product_picker",
-                "label":"Select Products",
-                "id":"product_picker",
-                "info":"Select the products to display"
-             }
-          ]
-       }
+    "blocks": [
+      {
+        "type": "product",
+        "name": "Products",
+        "settings": []
+      }
     ],
     "presets":[
        {
-          "name":"Custom Product Sliderz",
+          "name":"Custom Product Sliders",
           "category":"Custom"
        }
     ]
- }
+  }
   {% endschema %}
   
