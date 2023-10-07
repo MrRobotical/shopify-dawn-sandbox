@@ -1,9 +1,11 @@
 <!-- product-slider.liquid -->
 
+<!-- product-slider.liquid -->
+
 <div class="product-slider">
     <h2>{{ section.settings.title }}</h2>
     <div class="product-slider-container">
-      {% for product in section.blocks.products %}
+      {% for product in section.blocks.products.selected_products %}
         <div class="product-slide">
           <a href="{{ product.url }}">
             <img src="{{ product.featured_image | img_url: '500x500' }}" alt="{{ product.title }}" />
@@ -31,15 +33,24 @@
       {
         "type": "product",
         "name": "Products",
-        "settings": []
+        "settings": [
+          {
+            "type": "product_picker",
+            "label": "Select Products",
+            "id": "selected_products",
+            "info": "Select the products to display in the slider",
+            "max": 10
+          }
+        ]
       }
     ],
     "presets": [
       {
-        "name": "Custom Product Slider 2",
+        "name": "Custom Product Slider",
         "category": "Custom"
       }
     ]
   }
+  
   {% endschema %}
   
