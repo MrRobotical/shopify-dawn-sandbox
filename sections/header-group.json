@@ -7,7 +7,7 @@
       "blocks": {
         "announcement-bar-0": {
           "type": "announcement",
-          "settings": { "text": "Welcome to the Sandbox", "link": "" }
+          "settings": { "text": "Welcome to the Dawn Sandbox", "link": "" }
         }
       },
       "block_order": ["announcement-bar-0"],
