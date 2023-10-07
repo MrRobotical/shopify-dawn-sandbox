@@ -1,116 +1,69 @@
-{{ 'component-slideshow.css' | asset_url | stylesheet_tag }}
-{{ 'component-slider.css' | asset_url | stylesheet_tag }}
+{{ 'brand-carousel.css' | asset_url | stylesheet_tag }}
 
-{%- liquid
-  assign social_icons = true
-  if settings.social_facebook_link == blank and settings.social_instagram_link == blank and settings.social_youtube_link == blank and settings.social_tiktok_link == blank and settings.social_twitter_link == blank and settings.social_pinterest_link == blank and settings.social_snapchat_link == blank and settings.social_tumblr_link == blank and settings.social_vimeo_link == blank
-    assign social_icons = false
-  endif
-  if section.settings.enable_country_selector or section.settings.enable_language_selector
-    assign language_country_selector = true
-  endif
-  if section.blocks.size > 0
-    assign announcement_bar = true
-  endif
--%}
-
-{% if social_icons %}
-  {{ 'component-list-social.css' | asset_url | stylesheet_tag }}
-{% endif %}
-
-<div
-  class="utility-bar color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator and section.blocks.size > 0 %} utility-bar--bottom-border{% elsif section.settings.show_line_separator and section.settings.show_social and social_icons%} utility-bar--bottom-border-social-only{% endif %}{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header-localization{% endif %}"
-  {{ block.shopify_attributes }}
->
-  <div class="page-width utility-bar__grid{% if announcement_bar and language_country_selector or section.settings.show_social and social_icons %} utility-bar__grid--3-col{% elsif language_country_selector or section.settings.show_social and social_icons %} utility-bar__grid--2-col{% endif %}">
-    {%- if section.settings.show_social and social_icons -%}
-      {%- render 'social-icons' -%}
-    {%- endif -%}
-    {%- if section.blocks.size == 3 -%} {# Display three headlines evenly spaced #}
-      <div class="announcement-bar-3-col">
-        {%- for block in section.blocks -%}
-          <div class="announcement-bar__headline">
-            {%- if block.settings.text != blank -%}
-              <p class="announcement-bar__message h5" style="color: {{ section.settings.text_color }};">{{ block.settings.text | escape }}</p>
-            {%- endif -%}
-          </div>
-        {%- endfor -%}
-      </div>
-    {%- endif -%}
+<div class="brand-carousel">
+  <div class="brand-carousel-container">
+    <div class="brand-carousel-track">
+      {% for block in section.blocks %}
+        <div class="brand-carousel-item">
+          <img src="{{ block.settings.logo | img_url: '50x50' }}" alt="{{ block.settings.alt_text }}" />
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </div>
 
 {% schema %}
+
 {
-  "name": "t:sections.announcement-bar-improved.name",
-  "max_blocks": 3,  // Allow for three headlines
-  "class": "announcement-bar-improved-section",
-  "enabled_on": {
-    "groups": ["header"]
-  },
+  "name": "Brand Carousel",
+  "class": "brand-carousel",
+  "max_blocks": 10,
+  "blocks": [
+    {
+      "type": "brand",
+      "name": "Brand Logo",
+      "settings": [
+        {
+          "type": "image",
+          "id": "logo",
+          "label": "Brand Logo",
+          "info": "Upload your brand logo. It will be resized to 50px x 50px.",
+          "required": true
+        },
+        {
+          "type": "text",
+          "id": "alt_text",
+          "label": "Alt Text",
+          "info": "Provide alternative text for the logo (for accessibility)."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Default",
+      "category": "Custom"
+    }
+  ],
   "settings": [
     {
-      "type": "color_scheme",
-      "id": "color_scheme",
-      "label": "t:sections.all.colors.label",
-      "default": "accent-1"
-    },
-    {
       "type": "checkbox",
-      "id": "show_line_separator",
+      "id": "auto_scroll",
+      "label": "Auto Scroll",
       "default": true,
-      "label": "t:sections.header.settings.show_line_separator.label"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.announcement-bar.settings.header__1.content",
-      "info": "t:sections.announcement-bar.settings.header__1.info"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_social",
-      "default": false,
-      "label": "t:sections.announcement-bar.settings.show_social.label"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.announcement-bar.settings.header__2.content"
-    },
-    {
-      "type": "checkbox",
-      "id": "auto_rotate",
-      "label": "t:sections.announcement-bar.settings.auto_rotate.label",
-      "default": false
+      "info": "Enable auto-scrolling of brand logos in the carousel."
     },
     {
       "type": "range",
-      "id": "change_slides_speed",
-      "min": 3,
+      "id": "scroll_speed",
+      "label": "Scroll Speed",
+      "min": 1,
       "max": 10,
       "step": 1,
-      "unit": "s",
-      "label": "t:sections.announcement-bar.settings.change_slides_speed.label",
-      "default": 5
-    },
-    {
-      "type": "color",
-      "id": "text_color",  // Allow users to choose text color
-      "label": "Text Color",
-      "default": "#000000",
-      "info": "Choose the text color for the headlines."
-    },
-    {
-      "type": "gradient",  // Allow users to choose background gradient
-      "id": "background_gradient",
-      "label": "Background Gradient",
-      "info": "Select the background gradient for the announcement bar."
+      "default": 3,
+      "info": "Set the scroll speed (higher value means faster scrolling)."
     }
-  ],
-  "blocks": [
-    {
-      "type": "announcement",
-      "name": "t:sections.announcement-bar.blocks.announcement.name",
-      "settings
-      
-      
+  ]
+}
+
 {% endschema %}
