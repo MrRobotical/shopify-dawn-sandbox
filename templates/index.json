@@ -66,10 +66,16 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "755c9508-26da-4b3c-9ec3-7b36624b42f5": {
+      "type": "product-slider",
+      "settings": {
+      }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection"
+    "featured_collection",
+    "755c9508-26da-4b3c-9ec3-7b36624b42f5"
   ]
 }
