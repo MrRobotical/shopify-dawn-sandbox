@@ -1,26 +1,67 @@
-<h1>{{ section.settings.heading}}</h1>
+<!-- product-slider.liquid -->
+
+{{ 'product-slider.css' | asset_url | stylesheet_tag }}
+
+<div class="product-slider">
+  <div class="product-slider-container">
+    <div class="product-slider-track">
+      {% for product in section.settings.products %}
+        <div class="product-slider-item">
+          <a href="{{ product.url }}" class="product-link">
+            <img src="{{ product.featured_image.src | img_url: '500x500' }}" alt="{{ product.title }}" class="product-image" />
+          </a>
+          <h3 class="product-title">{{ product.title }}</h3>
+          <p class="product-price">{{ product.price | money }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
 
 {% schema %}
-  {
-    "name": "Custom Product Slider",
-    "settings": [
-        {
-        "type": "text", 
-        "id": "heading",
-        "label": "Heading", 
-        "default": "Custom Heading"
+
+{
+  "name": "Product Slider 2",
+  "max_blocks": 10,
+  "class": "product-slider-section",
+  "settings": [
+    {
+      "type": "product",
+      "label": "Select Products",
+      "id": "products",
+      "info": "Select the products you want to display in the slider.",
+      "required": true,
+      "max_items": 10
     }
+  ],
+  "presets": [
+    {
+      "name": "Default 2",
+      "category": "Custom"
+    }
+  ]
+}
+
+{
+    "name": "Product Slider 2",
+    "max_blocks": 10,
+    "class": "product-slider-section",
+    "settings": [
+      {
+        "type": "product",
+        "label": "Select Products",
+        "id": "products",
+        "info": "Select the products you want to display in the slider.",
+        "required": true,
+        "max_items": 10
+      }
     ],
     "presets": [
-        {
-        "name":"Custom Product Slider"
-    }
+      {
+        "name": "Not sure what this is",
+        "category": "Custom"
+      }
     ]
   }
-{% endschema %}
 
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
+  {% endschema %}
