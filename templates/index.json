@@ -87,8 +87,8 @@
     "5b35ad3b-353d-4022-9ea9-de94869c4655": {
       "type": "custom-product-type-message",
       "settings": {
-        "product_type": "Shirt",
-        "custom_message": "This is a custom message for Shirts!!"
+        "product_type": "Skis",
+        "custom_message": "This is a custom message for Skis!!"
       }
     }
   },
