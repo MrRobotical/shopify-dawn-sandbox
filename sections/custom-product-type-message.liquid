@@ -1,0 +1,36 @@
+<div class="product-type-message">
+    {% if product.type == section.settings.product_type %}
+      <p>{{ section.settings.custom_message }}</p>
+    {% endif %}
+  </div>
+
+{% schema %}
+{
+    "name": "Product Type Message",
+    "class": "product-type-message",
+    "settings": [
+      {
+        "type": "text",
+        "label": "Product Type",
+        "id": "product_type",
+        "default": "Shirt",
+        "info": "Enter the product type to display the custom message for."
+      },
+      {
+        "type": "text",
+        "label": "Custom Message",
+        "id": "custom_message",
+        "default": "This is a custom message for the selected product type."
+      }
+    ],
+    "blocks": [],
+    "presets": [
+      {
+        "name": "Default",
+        "category": "Custom"
+      }
+    ]
+  }
+
+
+{% endschema %}
