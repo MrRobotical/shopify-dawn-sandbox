@@ -3,20 +3,12 @@
                -webkit-background-clip: text; 
                background-clip: text; 
                color: transparent; 
-               font-family: {{ section.settings.font_gradient }};
+               font-family: {{ section.settings.gradient_font }};
                font-size: {{ section.settings.font_size }}px;">
       {{ section.settings.heading_text }}
     </h1>
   </div>
 
-  {% assign gradientFont = section.settings.font_gradient %}
-
-  <style>
-    .gradient-heading-section {
-      font-family: {{ gradientFont }},
-    }
-  </style>
-  
 
 
   {% schema %}
@@ -45,7 +37,7 @@
     {
       "type": "font_picker",
       "label": "Font",
-      "id": "font_gradient",
+      "id": "gradient_font",
       "default": "helvetica_n4"
     },
     {
