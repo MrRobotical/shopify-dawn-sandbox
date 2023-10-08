@@ -66,10 +66,21 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "1202f704-6b08-404e-8ffd-ec233fa491d0": {
+      "type": "custom-gradient",
+      "settings": {
+        "heading_text": "YOUR GRADIENT HEADING",
+        "gradient_color_start": "#ff6600",
+        "gradient_color_end": "#ffcc00",
+        "font": "futura_n7",
+        "font_size": 66
+      }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection"
+    "featured_collection",
+    "1202f704-6b08-404e-8ffd-ec233fa491d0"
   ]
 }
