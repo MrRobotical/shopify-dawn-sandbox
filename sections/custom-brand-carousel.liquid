@@ -1,0 +1,44 @@
+<div class="brand-carousel">
+    <h2>{{ section.settings.title }}</h2>
+    <div class="brand-carousel-container">
+      <div class="brand-carousel-track">
+        {% for collection in section.blocks.collections %}
+          <div class="brand-carousel-item">
+            <a href="{{ collection.url }}">
+              <img src="{{ collection.image | img_url: '60x60' }}" alt="{{ collection.title }}" />
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+{% schema %}
+
+  {
+    "name": "Brand Carousel",
+    "class": "brand-carousel",
+    "settings": [
+      {
+        "type": "text",
+        "label": "Title",
+        "id": "title",
+        "default": "Brand Collections"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "collection",
+        "name": "Collections",
+        "settings": []
+      }
+    ],
+    "presets": [
+      {
+        "name": "Brand Carousel",
+        "category": "Custom"
+      }
+    ]
+  }
+
+  {% endschema %}
