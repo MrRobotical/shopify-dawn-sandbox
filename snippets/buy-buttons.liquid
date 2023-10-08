@@ -82,7 +82,7 @@
               disabled
             {% endif %}
           >
-            {{ section.settings.custom_message }}
+            <p>{{ section.settings.custom_message }}</p>
             <span>
               {%- if product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
                 {{ 'products.product.sold_out' | t }}
