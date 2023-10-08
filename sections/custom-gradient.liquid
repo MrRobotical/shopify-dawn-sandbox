@@ -1,13 +1,13 @@
 <div class="gradient-heading-section">
-    <div style="background: linear-gradient(to right, {{ section.settings.gradient_color_start }}, {{ section.settings.gradient_color_end }}); 
+    <h1 style="background: linear-gradient(to right, {{ section.settings.gradient_color_start }}, {{ section.settings.gradient_color_end }}); 
                -webkit-background-clip: text; 
                background-clip: text; 
                color: transparent; 
-               font-family: '{{ section.settings.gradient_font }}, arial';
+               font-family: {{ section.settings.gradient_font }};
                font-size: {{ section.settings.font_size }}px;
                text-align: {{ section.settings.text_alignment }};">
       {{ section.settings.heading_text }}
-    </div>
+    </h1>
   </div>
 
 
