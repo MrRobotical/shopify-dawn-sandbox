@@ -73,14 +73,22 @@
         "heading_text": "YOUR GRADIENT HEADING",
         "gradient_color_start": "#00ffe8",
         "gradient_color_end": "#0004ff",
-        "gradient_font": "archivo_n4",
-        "font_size": 66
+        "gradient_font": "helvetica_n4",
+        "font_size": 66,
+        "text_alignment": "center"
+      }
+    },
+    "77fc3470-daaf-401e-8a50-3bd413517c07": {
+      "type": "custom-brand-carousel",
+      "settings": {
+        "title": "Brand Collections"
       }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
-    "1202f704-6b08-404e-8ffd-ec233fa491d0"
+    "1202f704-6b08-404e-8ffd-ec233fa491d0",
+    "77fc3470-daaf-401e-8a50-3bd413517c07"
   ]
 }
