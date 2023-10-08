@@ -3,7 +3,7 @@
                -webkit-background-clip: text; 
                background-clip: text; 
                color: transparent; 
-               font-family: {{ section.settings.gradient_font }};
+               font-family: '{{ section.settings.gradient_font }}';
                font-size: {{ section.settings.font_size }}px;">
       {{ section.settings.heading_text }}
     </h6>
@@ -38,7 +38,7 @@
       "type": "font_picker",
       "label": "Font",
       "id": "gradient_font",
-      "default": "helvetica_n4",
+      "default": "helvetica_n4"
     },
     {
       "type": "range",
