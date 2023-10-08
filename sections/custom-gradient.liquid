@@ -1,0 +1,59 @@
+<div class="gradient-heading-section">
+    <h1 style="background: linear-gradient(to right, {{ section.settings.gradient_color_start }}, {{ section.settings.gradient_color_end }}); 
+               -webkit-background-clip: text; 
+               background-clip: text; 
+               color: transparent; 
+               font-family: {{ section.settings.font }};
+               font-size: {{ section.settings.font_size }}px;">
+      {{ section.settings.heading_text }}
+    </h1>
+  </div>
+
+  {% schema %}
+{
+  "name": "Gradient Heading Section",
+  "class": "gradient-heading-section",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Heading Text",
+      "id": "heading_text",
+      "default": "Your Gradient Heading"
+    },
+    {
+      "type": "color",
+      "label": "Gradient Color Start",
+      "id": "gradient_color_start",
+      "default": "#ff6600"
+    },
+    {
+      "type": "color",
+      "label": "Gradient Color End",
+      "id": "gradient_color_end",
+      "default": "#ffcc00"
+    },
+    {
+      "type": "font",
+      "label": "Font",
+      "id": "font",
+      "default": "Arial, sans-serif"
+    },
+    {
+      "type": "range",
+      "label": "Font Size (px)",
+      "id": "font_size",
+      "min": 20,
+      "max": 100,
+      "step": 1,
+      "default": 36
+    }
+  ],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "Default",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
