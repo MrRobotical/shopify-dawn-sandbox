@@ -1,12 +1,12 @@
 <div class="gradient-heading-section">
-    <h6 style="background: linear-gradient(to right, {{ section.settings.gradient_color_start }}, {{ section.settings.gradient_color_end }}); 
+    <h1 style="background: linear-gradient(to right, {{ section.settings.gradient_color_start }}, {{ section.settings.gradient_color_end }}); 
                -webkit-background-clip: text; 
                background-clip: text; 
                color: transparent; 
                font-family: '{{ section.settings.gradient_font }}';
                font-size: {{ section.settings.font_size }}px;">
       {{ section.settings.heading_text }}
-    </h6>
+    </h1>
   </div>
 
 
@@ -48,6 +48,26 @@
       "max": 100,
       "step": 1,
       "default": 36
+    }
+    {
+      "type": "select",
+      "label": "Text Alignment",
+      "id": "text_alignment",
+      "default": "center",
+      "options": [
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ]
     }
   ],
   "blocks": [],
