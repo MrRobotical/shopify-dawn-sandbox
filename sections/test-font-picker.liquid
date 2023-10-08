@@ -1,0 +1,51 @@
+<div class="custom-heading-section">
+    
+  <h1 style="font-family: '{{ section.settings.heading_font }}'; font-size: {{ section.settings.font_size }}px; color: {{ section.settings.text_color }};">
+    {{ section.settings.heading_text }}
+  </h1>
+</div>
+
+{% schema %} 
+
+{
+    "name": "Custom Heading Section",
+    "class": "custom-heading-section",
+    "settings": [
+      {
+        "type": "text",
+        "label": "Heading Text",
+        "id": "heading_text",
+        "default": "Your Custom Heading"
+      },
+      {
+        "type": "font_picker",
+        "label": "Font",
+        "id": "heading_font",
+        "default": "Helvetica Neue"
+      },
+      {
+        "type": "range",
+        "label": "Font Size (px)",
+        "id": "font_size",
+        "min": 20,
+        "max": 100,
+        "step": 1,
+        "default": 36
+      },
+      {
+        "type": "color",
+        "label": "Text Color",
+        "id": "text_color",
+        "default": "#333333"
+      }
+    ],
+    "blocks": [],
+    "presets": [
+      {
+        "name": "Custom Heading",
+        "category": "Custom"
+      }
+    ]
+  }
+  
+  {% endschema %} 
