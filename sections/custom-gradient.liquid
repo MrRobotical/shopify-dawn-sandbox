@@ -9,6 +9,16 @@
     </h1>
   </div>
 
+  {% assign gradientFont = section.settings.font_gradient %}
+
+  <style>
+    .gradient-heading-section {
+      font-family: {{ gradientFont }},
+    }
+  </style>
+  
+
+
   {% schema %}
 {
   "name": "Gradient Heading Section",
