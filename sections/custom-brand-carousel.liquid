@@ -2,7 +2,7 @@
     <h2>{{ section.settings.title }}</h2>
     <div class="brand-carousel-container">
         <div class="brand-carousel-track">
-            {% for collection in section.blocks.collections %}
+            {% for collection in section.blocks.collection %}
                 <div class="brand-carousel-item">
                     <a href="{{ collection.url }}">
                         <img src="{{ collection.image | img_url: '60x60' }}" alt="{{ collection.title }}" />
@@ -32,6 +32,7 @@
             "settings": [
                 {
                     "type": "collection",
+                    "id": "collection",
                     "label": "Select Collections"
                 }
             ]
