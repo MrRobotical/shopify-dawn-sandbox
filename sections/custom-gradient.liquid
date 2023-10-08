@@ -12,70 +12,72 @@
 
 
   {% schema %}
-{
-  "name": "Gradient Heading Section",
-  "class": "gradient-heading-section",
-  "settings": [
-    {
-      "type": "text",
-      "label": "Heading Text",
-      "id": "heading_text",
-      "default": "Your Gradient Heading"
-    },
-    {
-      "type": "color",
-      "label": "Gradient Color Start",
-      "id": "gradient_color_start",
-      "default": "#ff6600"
-    },
-    {
-      "type": "color",
-      "label": "Gradient Color End",
-      "id": "gradient_color_end",
-      "default": "#ffcc00"
-    },
-    {
-      "type": "font_picker",
-      "label": "Font",
-      "id": "gradient_font",
-      "default": "helvetica_n4"
-    },
-    {
-      "type": "range",
-      "label": "Font Size (px)",
-      "id": "font_size",
-      "min": 20,
-      "max": 100,
-      "step": 1,
-      "default": 36
-    }
-    {
-      "type": "select",
-      "label": "Text Alignment",
-      "id": "text_alignment",
-      "default": "center",
-      "options": [
-        {
-          "value": "center",
-          "label": "Center"
-        },
-        {
-          "value": "left",
-          "label": "Left"
-        },
-        {
-          "value": "right",
-          "label": "Right"
-        }
-      ]
-    }
-  ],
-  "blocks": [],
-  "presets": [
-    {
-      "name": "Gradient",
-      "category": "Custom"
-    }
-  ]
-}
+  {
+    "name":"Gradient Heading Section",
+    "class":"gradient-heading-section",
+    "settings":[
+       {
+          "type":"text",
+          "label":"Heading Text",
+          "id":"heading_text",
+          "default":"Your Gradient Heading"
+       },
+       {
+          "type":"color",
+          "label":"Gradient Color Start",
+          "id":"gradient_color_start",
+          "default":"#ff6600"
+       },
+       {
+          "type":"color",
+          "label":"Gradient Color End",
+          "id":"gradient_color_end",
+          "default":"#ffcc00"
+       },
+       {
+          "type":"font_picker",
+          "label":"Font",
+          "id":"gradient_font",
+          "default":"helvetica_n4"
+       },
+       {
+          "type":"range",
+          "label":"Font Size (px)",
+          "id":"font_size",
+          "min":20,
+          "max":100,
+          "step":1,
+          "default":36
+       }{
+          "type":"select",
+          "label":"Text Alignment",
+          "id":"text_alignment",
+          "default":"center",
+          "options":[
+             {
+                "value":"center",
+                "label":"Center"
+             },
+             {
+                "value":"left",
+                "label":"Left"
+             },
+             {
+                "value":"right",
+                "label":"Right"
+             }
+          ]
+       }
+    ],
+    "blocks":[
+       
+    ],
+    "presets":[
+       {
+          "name":"Gradient",
+          "category":"Custom"
+       }
+    ]
+  }
 {% endschema %}
+
