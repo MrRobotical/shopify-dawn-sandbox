@@ -71,8 +71,8 @@
       "type": "custom-gradient",
       "settings": {
         "heading_text": "YOUR GRADIENT HEADING",
-        "gradient_color_start": "#f700ff",
-        "gradient_color_end": "#0031ff",
+        "gradient_color_start": "#00ffe8",
+        "gradient_color_end": "#0004ff",
         "font": "futura_n7",
         "font_size": 66
       }
