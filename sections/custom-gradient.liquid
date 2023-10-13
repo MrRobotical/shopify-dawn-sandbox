@@ -15,6 +15,18 @@
   </div>
 
 
+{% assign burton_collection = collections ['burton']%}
+
+{{burton_collection.title}}
+
+<ul>
+{% for burton_product in burton_collection.products %}
+    <li>
+        <a href="{{burton_product.url}}">{{burton_product.title}} - {{burton_product.price | money }}</a>
+    </li>
+{% endfor%}
+</ul>
+
   {% schema %}
   {
     "name":"Gradient Heading Section",
