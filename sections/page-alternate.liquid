@@ -6,7 +6,7 @@
 <ul>
 {% for burton_product in burton_collection.products %}
     <li>
-        <a href="{{burton_product.url}}">{{burton_product.title}} - {{burton_product.price | money }} - {{product.available}}</a>
+        <a href="{{burton_product.url}}">{{burton_product.title}} - {{burton_product.price | money }} - {{burton_product.available}}</a>
     </li>
 {% endfor%}
 </ul>
