@@ -6,7 +6,7 @@
 <ul>
 {% for burton_product in burton_collection.products %}
     <li>
-        {% for burton_product_image in burton_collection.products.images %}
+        {% for burton_product_image in burton_collection.product.images %}
         <img src="{{ image.src | product_img_url: 'medium' }}">
         {% endfor %}
 
