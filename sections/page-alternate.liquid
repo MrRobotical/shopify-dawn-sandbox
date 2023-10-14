@@ -14,3 +14,7 @@
     </li>
 {% endfor%}
 </ul>
+
+{% for product_type in burton_collection.all_types %}
+    {{ product_type | link_to_type }}
+  {% endfor %}
