@@ -7,19 +7,15 @@
 {% for burton_product in burton_collection.products %}
     <li>
 
-        <a href="{{burton_product.url}}">{{burton_product.title}} - {{burton_product.price | money }}
-        {% if burton_product.available != true %}
-             - (SOLD OUT!)
-
         <img src="{{ burton_product.featured_image | img_url: 'medium' }}" alt="{{ burton_product.featured_image.alt }}">
 
         <br>
         <br>
         <br>
 
-        {% comment %} {% for image in burton_product.featured_image %}
-            <img src="{{ image | img_url: 'medium' }}">
-        {% endfor %} {% endcomment %}
+        <a href="{{burton_product.url}}">{{burton_product.title}} - {{burton_product.price | money }}
+        {% if burton_product.available != true %}
+             - (SOLD OUT!)
    
         {% endif %}
         </a>
