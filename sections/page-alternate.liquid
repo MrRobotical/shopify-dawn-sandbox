@@ -6,6 +6,7 @@
 <ul>
 {% for burton_product in burton_collection.products %}
     <li>
+        <img src="{{ image.src | product_img_url: 'medium' }}">
         <a href="{{burton_product.url}}">{{burton_product.title}} - {{burton_product.price | money }}
         {% if burton_product.available != true %}
              - (SOLD OUT!)
@@ -14,6 +15,11 @@
     </li>
 {% endfor%}
 </ul>
+
+
+
+
+
 
 {% for product_type in burton_collection.all_types %}
     {{ product_type | link_to_type }}
