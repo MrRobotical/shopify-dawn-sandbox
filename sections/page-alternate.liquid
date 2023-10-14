@@ -7,6 +7,8 @@
 {% for burton_product in burton_collection.products %}
     <li>
 
+        <img src="{{ burton_product.featured_image | img_url: 'medium' }}" alt="{{ burton_product.featured_image.alt }}">
+
         {% comment %} {% for image in burton_product.featured_image %}
             <img src="{{ image | img_url: 'medium' }}">
         {% endfor %} {% endcomment %}
@@ -19,9 +21,6 @@
     </li>
 {% endfor%}
 </ul>
-
-<img src="{{ burton_product.featured_image | img_url: 'medium' }}" alt="{{ burton_product.featured_image.alt }}">
-
 
 
 
