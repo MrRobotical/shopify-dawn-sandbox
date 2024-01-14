@@ -3598,3 +3598,7 @@ details-disclosure > details {
 .utility-bar {
   background-color: rgb(248, 77, 77) !important;
 }
+
+.announcement-bar__message {
+  color: white;
+}
