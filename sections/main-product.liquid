@@ -172,6 +172,15 @@
                   {%- endif -%}
                 {%- endif -%}
               </p>
+
+{% if product.type == 'Skis' %}
+  <div class="custom-message">
+    <!-- Your custom message goes here -->
+    <p>This is a scustom message!</p>
+  </div>
+{% endif %}
+
+                          
             {%- when 'description' -%}
               {%- if product.description != blank -%}
                 <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
