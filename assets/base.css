@@ -3591,7 +3591,6 @@ details-disclosure > details {
 #shopify-section-sections--16170481254557__announcement-bar {
   position: sticky !important;
   top: 0;
-  color: white;
-  opacity: 0.7;
-  background-color: grey;
+  opacity: 0.8;
+  background-color: rgb(248, 77, 77);
 }
