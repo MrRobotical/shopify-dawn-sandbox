@@ -3601,4 +3601,5 @@ details-disclosure > details {
 
 .announcement-bar__message {
   color: black;
+  font-weight: bold;
 }
