@@ -3602,3 +3602,8 @@ details-disclosure > details {
 .utility-bar {
   background-color: rgb(248, 77, 77) !important;
 }
+
+
+.product-form__buttons {
+  border-radius: 25px;
+}
