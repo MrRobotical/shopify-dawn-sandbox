@@ -3604,5 +3604,6 @@ details-disclosure > details {
 }
 
 .header {
-   position: sticky !important;
+  position: sticky !important;
+  top: 0;
 }
