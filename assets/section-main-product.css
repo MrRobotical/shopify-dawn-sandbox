@@ -1599,6 +1599,6 @@ a.product__text {
   }
 }
 
-.button {
-   border-radius: 25px; !important
+product-form__buttons {
+   border-radius: 75px; !important
 }
