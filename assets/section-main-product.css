@@ -469,7 +469,6 @@ a.product__text {
 
 .product-form__buttons {
   max-width: 44rem;
-  border-radius: 25px; !important;
 }
 
 .product--no-media .product__info-container > modal-opener {
@@ -1600,3 +1599,6 @@ a.product__text {
   }
 }
 
+#ProductSubmitButton-template--16170481746077__main {
+   border-radius: 25px;
+}
