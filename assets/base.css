@@ -3588,18 +3588,17 @@ details-disclosure > details {
   }
 }
 
+.announcement-bar__message {
+  color: black;
+  font-weight: bold;
+}
+
 #shopify-section-sections--16170481254557__announcement-bar {
   position: sticky !important;
   top: 0;
   opacity: 0.6;
-  color: white;
 }
 
 .utility-bar {
   background-color: rgb(248, 77, 77) !important;
-}
-
-.announcement-bar__message {
-  color: black;
-  font-weight: bold;
 }
