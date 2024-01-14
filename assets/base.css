@@ -3605,5 +3605,5 @@ details-disclosure > details {
 
 
 .product-form__buttons {
-  border-radius: 25px;
+  border-radius: 25px; !important;
 }
