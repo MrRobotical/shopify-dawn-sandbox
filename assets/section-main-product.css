@@ -1600,5 +1600,5 @@ a.product__text {
 }
 
 product-form__buttons {
-   border-radius: 75px; !important
+   border-radius: 75px !important;
 }
