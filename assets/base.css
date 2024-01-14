@@ -3591,7 +3591,8 @@ details-disclosure > details {
 #shopify-section-sections--16170481254557__announcement-bar {
   position: sticky !important;
   top: 0;
-  opacity: 0.8;
+  opacity: 0.6;
+  color: white;
 }
 
 .utility-bar {
