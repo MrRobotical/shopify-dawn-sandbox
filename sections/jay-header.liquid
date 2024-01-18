@@ -1,12 +1,27 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
-{% endschema %}
+<!-- Custom Header Section -->
+<header class="site-header sticky-header">
+    <div class="header-content">
+        <!-- Logo -->
+        <div class="header-logo">
+            {{ 'logo.png' | asset_url | img_tag: shop.name }}
+        </div>
 
-{% stylesheet %}
-{% endstylesheet %}
+        <!-- Navigation Menu -->
+        <nav class="header-navigation">
+            {% for link in linklists.main-menu.links %}
+                <a href="{{ link.url }}" class="nav-link">{{ link.title }}</a>
+            {% endfor %}
+        </nav>
 
-{% javascript %}
-{% endjavascript %}
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="search" placeholder="Search...">
+        </div>
+
+        <!-- Account and Cart Icons -->
+        <div class="header-icons">
+            <a href="/account">Account</a>
+            <a href="/cart">Cart ({{ cart.item_count }})</a>
+        </div>
+    </div>
+</header>
