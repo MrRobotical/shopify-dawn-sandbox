@@ -3739,4 +3739,18 @@ details-disclosure > details {
     background-color: #333;
     color: white
 
+      /* Base Styles */
+.search-bar input[type="search"] {
+    width: 900px; /* Width for larger screens */
+    padding: 8px;
+}
+
+/* Responsive Styles for Mobile Devices */
+@media (max-width: 768px) {
+    .search-bar input[type="search"] {
+        width: 100%; /* Full width on smaller screens */
+        padding: 8px;
+    }
+}
+
 
