@@ -1,9 +1,14 @@
-<!-- Custom Header Section -->
 <header class="site-header sticky-header">
     <div class="header-content">
         <!-- Logo -->
         <div class="header-logo">
-            {{ 'logo.png' | asset_url | img_tag: shop.name }}
+            {% if settings.header_logo %}
+                <a href="{{ routes.root_url }}" aria-label="{{ 'general.accessibility.home' | t }}">
+                    {{ settings.header_logo | img_tag: shop.name, 'header-logo' }}
+                </a>
+            {% else %}
+                <a href="{{ routes.root_url }}" class="header-logo-text" aria-label="{{ 'general.accessibility.home' | t }}">{{ shop.name }}</a>
+            {% endif %}
         </div>
 
         <!-- Navigation Menu -->
@@ -14,14 +19,15 @@
         </nav>
 
         <!-- Search Bar -->
-        <div class="search-bar">
-            <input type="search" placeholder="Find your products here...">
-        </div>
+        <form action="/search" method="get" class="search-bar">
+            <input type="search" name="q" placeholder="Search..." aria-label="Search" value="{{ search.terms | escape }}" required>
+            <button type="submit" aria-label="Submit Search">Search</button>
+        </form>
 
         <!-- Account and Cart Icons -->
         <div class="header-icons">
-            <a href="/account">Account</a>
-            <a href="/cart">Cart ({{ cart.item_count }})</a>
+            <a href="{{ routes.account_login_url }}">Account</a>
+            <a href="{{ routes.cart_url }}">Cart ({{ cart.item_count }})</a>
         </div>
     </div>
 </header>
