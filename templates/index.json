@@ -41,6 +41,31 @@
     },
     "jay_custom_tests_UMcPA7": {
       "type": "jay-custom-tests",
+      "blocks": {
+        "image_N4Te99": {
+          "type": "image",
+          "settings": {
+            "image-picker": "shopify:\/\/shop_images\/10539101712_1_1683x1800_300_RGB.jpg"
+          }
+        },
+        "image_mbQ6Fh": {
+          "type": "image",
+          "settings": {
+            "image-picker": "shopify:\/\/shop_images\/10542101654_1_1748x1800_300_RGB.jpg"
+          }
+        },
+        "image_HQ7wAw": {
+          "type": "image",
+          "settings": {
+            "image-picker": "shopify:\/\/shop_images\/10558102480_1_641x720_72_RGB.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_N4Te99",
+        "image_mbQ6Fh",
+        "image_HQ7wAw"
+      ],
       "settings": {
         "text": "Coding with Jason",
         "richtext": "<p><strong>This is the richtext output<\/strong><\/p>",
