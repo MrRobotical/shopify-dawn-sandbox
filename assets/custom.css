@@ -6,3 +6,7 @@
 #ProductSubmitButton-template--16170481746077__main {
   color: red;
 }
+
+.product-form__submit button button--full-width button--secondary{
+  color: red;
+}
