@@ -1,8 +1,8 @@
 <h1>{{ section.settings.text }}</h1>
-<h2>{{ section.settings.richtext }}</h2>
+<h2 style="{{ section.settings.font_size }}">{{ section.settings.richtext }}</h2>
 
 {% if section.settings.show_announcement %}
-  <h3>{{ "The Checkbox is turned on" }}</h3>
+  <h3 >{{ "The Checkbox is turned on" }}</h3>
 {% endif %}
 
 
@@ -25,7 +25,17 @@
         "id": "show_announcement",
         "label": "Show This Announcement",
         "default": true
-      }
+      },
+      {
+      "type": "range",
+      "id": "font_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size",
+      "default": 16
+    }
     ],
     "presets": [{"name": "Default custom section"}],
     "tag": "header",
