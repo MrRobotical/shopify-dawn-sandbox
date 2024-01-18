@@ -3728,7 +3728,7 @@ details-disclosure > details {
 
 /* Search Bar Styles */
 .search-bar input[type="search"] {
-    width: 300px; /* Wide search bar */
+    width: 900px; /* Wide search bar */
     padding: 8px; /* Increased padding for input */
 }
 
