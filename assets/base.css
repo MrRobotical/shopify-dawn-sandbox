@@ -3612,7 +3612,7 @@ details-disclosure > details {
 
 /* Sticky Header Styles */
 .sticky-header {
-    position: sticky;
+    position: sticky; Important!
     top: 0;
     background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
     z-index: 10;
