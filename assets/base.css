@@ -3639,6 +3639,7 @@ details-disclosure > details {
 .search-bar input[type="search"] {
     width: 600px; /* Wide search bar */
     padding: 5px;
+  border-radius: 50px;
 }
 
 .header-icons a {
