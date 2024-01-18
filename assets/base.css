@@ -3637,7 +3637,7 @@ details-disclosure > details {
 }
 
 .search-bar input[type="search"] {
-    width: 300px; /* Wide search bar */
+    width: 600px; /* Wide search bar */
     padding: 5px;
 }
 
