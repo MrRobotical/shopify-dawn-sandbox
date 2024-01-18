@@ -67,6 +67,11 @@
         "padding_bottom": 36
       }
     },
+    "jay-carousel": {
+      "type": "jay-carousel",
+      "settings": {
+      }
+    },
     "1202f704-6b08-404e-8ffd-ec233fa491d0": {
       "type": "custom-gradient",
       "settings": {
@@ -95,6 +100,7 @@
   "order": [
     "image_banner",
     "featured_collection",
+    "jay-carousel",
     "1202f704-6b08-404e-8ffd-ec233fa491d0",
     "77fc3470-daaf-401e-8a50-3bd413517c07",
     "5b35ad3b-353d-4022-9ea9-de94869c4655"
