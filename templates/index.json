@@ -43,7 +43,9 @@
       "type": "jay-custom-tests",
       "settings": {
         "text": "Coding with Jason",
-        "richtext": "<p><strong>This is the richtext output<\/strong><\/p>"
+        "richtext": "<p><strong>This is the richtext output<\/strong><\/p>",
+        "show_announcement": true,
+        "font_size": 24
       }
     },
     "featured_collection": {
