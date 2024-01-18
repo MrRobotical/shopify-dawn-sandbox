@@ -1,12 +1,26 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
+<section class="brand-carousel">
+  <div class="carousel-container">
+    {% for i in (1..6) %}
+      <div class="carousel-slide">
+        <img src="{{ 'brand-' | append: i | append: '.jpg' | asset_url }}" alt="Brand {{ i }}">
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<style>
+  .brand-carousel .carousel-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
   }
-{% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
+  .brand-carousel .carousel-slide {
+    flex: none;
+    width: 100%; /* Adjust width as needed */
+    scroll-snap-align: start;
+  }
+  .brand-carousel .carousel-slide img {
+    width: 100%;
+    height: auto;
+  }
+</style>
