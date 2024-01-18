@@ -42,7 +42,8 @@
     "jay_custom_tests_UMcPA7": {
       "type": "jay-custom-tests",
       "settings": {
-        "text": "Coding with Jason"
+        "text": "Coding with Jason",
+        "richtext": "<p><strong>This is the richtext output<\/strong><\/p>"
       }
     },
     "featured_collection": {
