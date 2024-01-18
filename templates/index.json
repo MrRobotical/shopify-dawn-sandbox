@@ -136,6 +136,26 @@
         "product_type": "Skis",
         "custom_message": "This is a custom message for Skis!!"
       }
+    },
+    "jay_custom_tests_8PMEjN": {
+      "type": "jay-custom-tests",
+      "blocks": {
+        "image_yfTbqn": {
+          "type": "image",
+          "settings": {
+            "image-picker": "shopify:\/\/shop_images\/10231100205_1_1315x1800_300_CMYK.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_yfTbqn"
+      ],
+      "settings": {
+        "text": "Hello there",
+        "richtext": "<p>We are coding<\/p>",
+        "show_announcement": true,
+        "font_size": 43
+      }
     }
   },
   "order": [
@@ -145,6 +165,7 @@
     "jay-carousel",
     "1202f704-6b08-404e-8ffd-ec233fa491d0",
     "77fc3470-daaf-401e-8a50-3bd413517c07",
-    "5b35ad3b-353d-4022-9ea9-de94869c4655"
+    "5b35ad3b-353d-4022-9ea9-de94869c4655",
+    "jay_custom_tests_8PMEjN"
   ]
 }
