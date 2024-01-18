@@ -8,5 +8,6 @@
 }
 
 .product-form__submit button button--full-width button--secondary{
-  color: red;
+  color: black;
+  background-color: red
 }
