@@ -1,6 +1,36 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Product Tag Msg",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "richtext",
+      "label": "Rich Text Input"
+    },
+    {
+      "type": "range",
+      "id": "font_size",
+      "min": 12,
+      "max": 48,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size",
+      "default": 16
+    },
+    {
+      "type": "checkbox",
+      "id": "show_announcement",
+      "label": "Show This Announcement",
+      "default": true
+    }
+  ]
+}
+
 {% endschema %}
+
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
