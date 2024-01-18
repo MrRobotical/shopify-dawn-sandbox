@@ -3648,3 +3648,56 @@ details-disclosure > details {
     color: #333; /* Adjust color */
 }
 
+
+/* Sticky Header Styles */
+.sticky-header {
+    position: -webkit-sticky; /* For Safari browser compatibility */
+    position: sticky;
+    top: 0; /* Set to the top of the page */
+    z-index: 1000; /* Ensure it's above other elements */
+    background-color: rgba(54, 69, 79, 0.8); /* Charcoal grey with 0.8 opacity */
+    width: 100%;
+    padding: 10px 20px;
+}
+
+/* Logo Styles */
+.header-logo img {
+    max-width: 120px; /* Adjust logo size */
+}
+
+/* Navigation Menu Styles */
+.header-navigation .nav-link {
+    font-family: Futura, Arial, sans-serif; /* Futura font, with fallbacks */
+    text-transform: uppercase; /* Uppercase text */
+    margin-right: 10px;
+    text-decoration: none;
+    color: white; /* Adjust as needed */
+}
+
+/* Search Bar Styles */
+.search-bar input[type="search"] {
+    width: 300px; /* Wide search bar */
+    padding: 5px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    margin-left: 5px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #555;
+}
+
+/* Account and Cart Icon Styles */
+.header-icons a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: white; /* Adjust as needed */
+}
+
+
