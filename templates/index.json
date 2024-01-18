@@ -39,6 +39,11 @@
         "show_text_below": false
       }
     },
+    "jay_custom_tests_UMcPA7": {
+      "type": "jay-custom-tests",
+      "settings": {
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -78,8 +83,8 @@
         "heading_text": "YOUR GRADIENT HEADING",
         "gradient_color_start": "#00ffe8",
         "gradient_color_end": "#0004ff",
-        "gradient_font": "futura_n8",
-        "font_size": 66,
+        "gradient_font": "inknut_antiqua_n4",
+        "font_size": 81,
         "text_alignment": "center"
       }
     },
@@ -99,6 +104,7 @@
   },
   "order": [
     "image_banner",
+    "jay_custom_tests_UMcPA7",
     "featured_collection",
     "jay-carousel",
     "1202f704-6b08-404e-8ffd-ec233fa491d0",

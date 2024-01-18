@@ -2,6 +2,11 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "jay_custom_tests_jj6Tpx": {
+      "type": "jay-custom-tests",
+      "settings": {
+      }
+    },
     "footer": {
       "type": "footer",
       "settings": {
@@ -20,5 +25,8 @@
       }
     }
   },
-  "order": ["footer"]
+  "order": [
+    "jay_custom_tests_jj6Tpx",
+    "footer"
+  ]
 }
