@@ -59,12 +59,19 @@
           "settings": {
             "image-picker": "shopify:\/\/shop_images\/10558102480_1_641x720_72_RGB.jpg"
           }
+        },
+        "image_NYxVKM": {
+          "type": "image",
+          "settings": {
+            "image-picker": "shopify:\/\/shop_images\/10175100258_1_1264x1800_300_RGB.jpg"
+          }
         }
       },
       "block_order": [
         "image_N4Te99",
         "image_mbQ6Fh",
-        "image_HQ7wAw"
+        "image_HQ7wAw",
+        "image_NYxVKM"
       ],
       "settings": {
         "text": "Coding with Jason",
