@@ -2,7 +2,7 @@
 
 {% for string in customTags %}
   {% if product.tags contains string %}
-    <div>{{ string }}</div>
+    <div>{{ settings.tag-name }}</div>
   {% endif %}
 {% endfor %}
 
