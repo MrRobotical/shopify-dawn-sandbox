@@ -1,6 +1,7 @@
-{% assign customTags = section.settings.tag-name | split: '\n' | replace: '\n', "" %}
+{% assign customTags = section.settings.tag-name | split: "\n" %}
 
-{% for string in customTags %}
+
+{% for string in customTags  %}
   {% if product.tags contains string %}
     <div>{{ section.settings.tag-text }}</div>
   {% endif %}
