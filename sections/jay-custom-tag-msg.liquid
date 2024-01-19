@@ -1,3 +1,15 @@
+<div></div>
+
+
+{% assign customTags = settings.tag-name | newline_to_br | split: '<br />' %}
+
+{% for string in customTags %}
+  {% if string == product.tags %}
+  <div>{{ settings.tag-name }}</div>
+  {% endif %}
+{% endfor %}
+
+
 {% schema %}
 {
   "name": "Product Tag Msg",
