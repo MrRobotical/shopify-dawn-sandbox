@@ -4,7 +4,7 @@
       "type": "jay-custom-tag-msg",
       "settings": {
         "tag-name": "ski-tag\nsnow-tag",
-        "tag-text": "These Products have a 10$ Shipping fee."
+        "tag-text": "These Products have a 10$ Shipping fee because they are OVERSIZED!"
       }
     },
     "main": {
