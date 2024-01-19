@@ -1,4 +1,4 @@
-{% assign customTags = section.settings.tag-name | newline_to_br | split: '<br />' %}
+{% assign customTags = section.settings.tag-name | split: '\n' %}
 
 {% for string in customTags %}
   {% if product.tags == string %}
