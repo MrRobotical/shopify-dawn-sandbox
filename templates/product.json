@@ -76,7 +76,7 @@
         "share"
       ],
       "custom_css": [
-        "#ProductInfo-template--16170481746077__main {text-color: green;}"
+        ".product__text inline-richtext {text-color:green;}"
       ],
       "settings": {
         "enable_sticky_info": true,
