@@ -95,12 +95,6 @@
               </div>
 
 
-
-<div class="free-shipping-progress-bar">
-  <div class="progress-bar-fill" style="width: {{ cart.total_price | divided_by: 100 | times: 75 }}%;"></div>
-</div>
-
-
         
               {%- if additional_checkout_buttons -%}
                 <div class="cart__dynamic-checkout-buttons additional-checkout-buttons">
@@ -115,6 +109,11 @@
     </div>
   </div>
 </div>
+
+<div class="free-shipping-progress-bar">
+  <div class="progress-bar-fill" style="width: {{ cart.total_price | divided_by: 100 | times: 75 }}%;"></div>
+</div>
+
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
