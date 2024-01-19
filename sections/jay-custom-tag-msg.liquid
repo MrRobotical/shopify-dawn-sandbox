@@ -1,12 +1,11 @@
-{% assign textareaContent = section.settings.custom-text | split: '\n' %}
-{% assign cleanedContent = '' | split: '' %}
+{% assign customTags = section.settings.tag-name | split: '\n' | replace: '\n', "" %}
 
-{% for line in textareaContent %}
-  {% assign cleanedLine = line | replace: '\n', '' | strip %}
-  {% if cleanedLine != '' %}
-    {% assign cleanedContent = cleanedContent | push: cleanedLine %}
+{% for string in customTags %}
+  {% if product.tags contains string %}
+    <div>{{ section.settings.tag-text }}</div>
   {% endif %}
 {% endfor %}
+
 
 <pre>{{ customTags | json }}</pre>
 
