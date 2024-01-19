@@ -1,5 +1,12 @@
 {
   "sections": {
+    "jay_custom_tag_msg_4KRFyM": {
+      "type": "jay-custom-tag-msg",
+      "settings": {
+        "tag-name": "ski-tag\nsnow-tag",
+        "tag-text": "These Products have a 10$ Shipping fee."
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -99,19 +106,12 @@
         "product_type": "Skis",
         "custom_message": "This is a custom message for Skissss"
       }
-    },
-    "jay_custom_tag_msg_4KRFyM": {
-      "type": "jay-custom-tag-msg",
-      "settings": {
-        "tag-name": "ski-tag\nsnow-tag",
-        "tag-text": "These Products have a 10$ Shipping fee."
-      }
     }
   },
   "order": [
+    "jay_custom_tag_msg_4KRFyM",
     "main",
     "related-products",
-    "294f3a2d-9c3e-4613-b5c4-d95522251848",
-    "jay_custom_tag_msg_4KRFyM"
+    "294f3a2d-9c3e-4613-b5c4-d95522251848"
   ]
 }
