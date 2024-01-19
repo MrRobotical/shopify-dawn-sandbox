@@ -1,15 +1,10 @@
 {% assign customTags = section.settings.tag-name | split: '\n' %}
-{% assign cleanedCustomTags = '' | split: '' %}
 
 {% for string in customTags %}
-  {% assign cleanedTag = string | strip %}
-  {% if cleanedTag != '' %}
-    {% assign cleanedCustomTags = cleanedCustomTags | push: cleanedTag %}
+  {% if product.tags contains string %}
+    <div>{{ section.settings.tag-text }}</div>
   {% endif %}
 {% endfor %}
-
-<pre>{{ cleanedCustomTags | json }}</pre>
-
 
 <pre>{{ customTags | json }}</pre>
 
