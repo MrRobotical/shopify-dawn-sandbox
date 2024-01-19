@@ -3,7 +3,7 @@
     "jay_custom_tag_msg_4KRFyM": {
       "type": "jay-custom-tag-msg",
       "settings": {
-        "tag-name": "snow-tag\nski-tag",
+        "tag-name": "snow-tag\nski-tag\nbindings-tag",
         "tag-text": "These Products have a 10$ Shipping fee because they are OVERSIZED!"
       }
     },
