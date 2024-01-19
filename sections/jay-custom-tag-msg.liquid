@@ -1,4 +1,4 @@
-{% assign customTags = section.settings.tag-name | split: "\n" | replace: "\n", "" %}
+{% assign customTags = section.settings.tag-name | split: ", " %}
 
 
 {% for string in customTags  %}
