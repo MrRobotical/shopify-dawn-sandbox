@@ -1,4 +1,4 @@
-{% assign customTags = section.settings.tag-name | split: '\n' | map: 'strip' | compact %}
+{% assign customTags = section.settings.tag-name | split: '\n' | map: 'strip' %}
 
 {% for string in customTags %}
   {% if product.tags contains string %}
