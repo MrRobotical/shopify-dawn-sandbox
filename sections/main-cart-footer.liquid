@@ -114,7 +114,10 @@
   <div class="progress-bar-fill" style="width: {{ cart.total_price | divided_by: 100 | times: 75 }}%;"></div>
 </div>
 
-
+<script>
+  console.log({{cart.total_price}})
+</script>
+    
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     function isIE() {
