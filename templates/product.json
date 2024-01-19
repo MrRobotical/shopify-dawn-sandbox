@@ -45,6 +45,13 @@
             "show_gift_card_recipient": true
           }
         },
+        "text_NGDNkk": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>Text block<\/strong>",
+            "text_style": "body"
+          }
+        },
         "description": {
           "type": "description",
           "settings": {
@@ -64,8 +71,12 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "text_NGDNkk",
         "description",
         "share"
+      ],
+      "custom_css": [
+        "#ProductInfo-template--16170481746077__main {text-color: green;}"
       ],
       "settings": {
         "enable_sticky_info": true,
