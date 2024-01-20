@@ -13,9 +13,12 @@
   </div>
 {% endcomment %}
 
-<div class="gradient-header" style="background: linear-gradient(to right, {{ section.settings.background_color }});">
-  <h1 style="color: {{ section.settings.title_color }}; font-family: {{ section.settings.font_family }}; font-size: {{ section.settings.font_size }}px;">{{ section.settings.title }}</h1>
+<div class="gradient-header">
+  <h1 style="gradient-title: linear-gradient(to right, {{ section.settings.start_color }}, {{ section.settings.end_color }}); -webkit-background-clip: text; color: transparent; font-family: {{ section.settings.font_family }}; font-size: {{ section.settings.font_size }}px;">
+    {{ section.settings.header_title }}
+  </h1>
 </div>
+
 
 
 
