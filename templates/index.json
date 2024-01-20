@@ -117,7 +117,7 @@
       "type": "custom-gradient",
       "settings": {
         "header_title": "This is a gradient",
-        "title_alignment": "right",
+        "title_alignment": "center",
         "start_color": "#17a2b0",
         "end_color": "#5917b0",
         "font_family": "mono",
