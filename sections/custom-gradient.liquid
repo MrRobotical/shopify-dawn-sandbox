@@ -26,20 +26,26 @@
   "name": "Gradient Header",
   "settings": [
     {
-      "type": "color",
-      "label": "Title Color",
-      "id": "title_color"
+      "type": "text",
+      "label": "Header Title",
+      "id": "header_title",
+      "default": "Your Title Here"
     },
     {
       "type": "color",
-      "label": "Background Color",
-      "id": "background_color"
+      "label": "Start Color",
+      "id": "start_color"
+    },
+    {
+      "type": "color",
+      "label": "End Color",
+      "id": "end_color"
     },
     {
       "type": "font_picker",
       "label": "Font Family",
       "id": "font_family",
-      "default":  "helvetica_n4"
+      "default": "helvetica_n4"
     },
     {
       "type": "range",
@@ -47,18 +53,17 @@
       "id": "font_size",
       "min": 10,
       "max": 72,
-      "step": 2,
-      "unit": "px",
-      "default": 16
+      "step": 1,
+      "default": 24
     }
   ],
+  "presets": [
+    {
+      "name": "Custom Gradient Header",
+      "category": "Custom"
+    }
+  ]
+}
 
-    "presets":[
-       {
-          "name":"Gradient",
-          "category":"Custom"
-       }
-    ]
-  }
 {% endschema %}
 
