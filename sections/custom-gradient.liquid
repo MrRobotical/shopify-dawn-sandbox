@@ -1,5 +1,5 @@
 
-
+{% comment %}
 <div class="gradient-heading-section">
     <h1 style="background: linear-gradient(to right, {{ section.settings.gradient_color_start }}, {{ section.settings.gradient_color_end }}); 
                -webkit-background-clip: text; 
@@ -11,6 +11,14 @@
       {{ section.settings.heading_text }}
     </h1>
   </div>
+{% endcomment %}
+
+<div class="gradient-header" style="background: linear-gradient(to right, {{ section.settings.background_color }});">
+  <h1 style="color: {{ section.settings.title_color }}; font-family: {{ section.settings.font_family }}; font-size: {{ section.settings.font_size }}px;">{{ section.settings.title }}</h1>
+</div>
+
+
+
 
 
   {% schema %}
