@@ -17,6 +17,46 @@
   }
 {%- endstyle -%}
 
+{% assign free_shipping_threshold = 100 %}
+{% assign cart_total = cart.total_price %}
+{% assign remaining_to_free_shipping = free_shipping_threshold | minus: cart_total %}
+{% assign progress_percentage = cart_total | divided_by: free_shipping_threshold | times: 100 | round: 2 %}
+
+<div class="progress-bar-container">
+  <div class="progress-bar" style="width: {{ progress_percentage }}%;"></div>
+  <p class="progress-text">You are {{ remaining_to_free_shipping | money }} away from free shipping!</p>
+</div>
+
+<style>
+  .progress-bar-container {
+    background-color: #f0f0f0; /* Background color for the progress bar container */
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .progress-bar {
+    background-color: #17a2b0; /* Color of the progress bar */
+    height: 20px; /* Height of the progress bar */
+    width: 0; /* The width will be set dynamically by JavaScript */
+    border-radius: 5px; /* Rounded corners for the progress bar */
+  }
+
+  .progress-text {
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;
+  }
+</style>
+
+
+<script>
+  // Get the progress bar element
+  var progressBar = document.querySelector(".progress-bar");
+  
+  // Set the width of the progress bar
+  progressBar.style.width = "{{ progress_percentage }}%";
+</script>
+
 
 <div class="page-width{% if cart == empty %} is-empty{% endif %}" id="main-cart-footer" data-id="{{ section.id }}">
   <div>
