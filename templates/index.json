@@ -113,6 +113,13 @@
       "settings": {
       }
     },
+    "font_picker_basic_Hzw334": {
+      "type": "font-picker-basic",
+      "settings": {
+        "header_title": "Font Family",
+        "font_family": "abril_fatface_n4"
+      }
+    },
     "1202f704-6b08-404e-8ffd-ec233fa491d0": {
       "type": "custom-gradient",
       "settings": {
@@ -163,6 +170,7 @@
     "jay_custom_tests_UMcPA7",
     "featured_collection",
     "jay-carousel",
+    "font_picker_basic_Hzw334",
     "1202f704-6b08-404e-8ffd-ec233fa491d0",
     "77fc3470-daaf-401e-8a50-3bd413517c07",
     "5b35ad3b-353d-4022-9ea9-de94869c4655",
