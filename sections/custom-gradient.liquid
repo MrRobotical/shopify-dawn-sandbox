@@ -13,20 +13,19 @@
   </div>
 {% endcomment %}
 
+<style>
+  h5 {
+    font-family:section.settings.font_family,
+  }
+</style>
 
 
 <div class="gradient-header">
-  <h5 style="background-image: linear-gradient(to right, {{ section.settings.start_color }}, {{ section.settings.end_color }}); -webkit-background-clip: text; color: transparent; font-family: {{ section.settings.font_family}}; font-size: {{ section.settings.font_size }}px;text-align: {{ section.settings.title_alignment }};">
+  <h5 style="background-image: linear-gradient(to right, {{ section.settings.start_color }}, {{ section.settings.end_color }}); -webkit-background-clip: text; color: transparent; font-family: {{ section.settings.font_family }}; font-size: {{ section.settings.font_size }}px;text-align: {{ section.settings.title_alignment }};">
     {{ section.settings.header_title }}
   </h5>
 </div>
 
-
-<script>
-  console.log(section.settings.start_color)
-</script>
-
-<p style="font-family: 'Futura', sans-serif;">Hello World!</p>
 
   {% schema %}
 {
