@@ -24,7 +24,48 @@
       display: block;
     }
   {%- endif -%}
+body {
+    background-color: black;
+    padding-top: 200px;
+    text-align: center;
+    padding: center;
+
+   
+}
+
+.gradient {
+    font-family: 'Alata', sans-serif;
+    font-size: 125px;
+    background: linear-gradient(75deg, #4ef0c7, #cf03fc, #03ccfc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 10s ease infinite;
+    background-size: 200% 200%;
+    text-align: center;
+    padding: center;
+
+}
+
+@keyframes animate {
+    0%{background-position:100% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:100% 0%}
+}
+
+p {
+    color:rgb(0, 204, 255);
+    font-family: 'Alata', sans-serif;
+    margin: 25px;
+    
+}
+  
 {%- endstyle -%}
+
+
+
+<div contenteditable="true"><p class="gradient">F#CK GRADIENTS</p></div>
+<p>CLICK ABOVE TO EDIT</p>
+
 
 <div
   id="Banner-{{ section.id }}"
