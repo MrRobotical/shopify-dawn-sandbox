@@ -20,7 +20,7 @@
 {% assign free_shipping_threshold = 100 %}
 {% assign cart_total = cart.total_price %}
 {% assign remaining_to_free_shipping = free_shipping_threshold | times: 100 | minus: cart_total %}
-{% assign progress_percentage = cart_total | divided_by: free_shipping_threshold | times: -100  %}
+{% assign progress_percentage = 60  %}
 
 <div class="progress-bar-container">
   <div class="progress-bar" style="width: {{ progress_percentage }}%;"></div>
