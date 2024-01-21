@@ -1,6 +1,72 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+
+  <h2 style="font-family: {{ section.settings.font_family }}";>
+    {{ section.settings.header_title }}
+  </h2>
+
+
+
+  {% schema %}
+{
+  "name": "Gradient Header",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Header Title",
+      "id": "header_title",
+      "default": "Your Title Here"
+    },
+    {
+  "type": "select",
+  "label": "Title Alignment",
+  "id": "title_alignment",
+  "options": [
+    {
+      "value": "center",
+      "label": "Center"
+    },
+    {
+      "value": "left",
+      "label": "Left"
+    },
+    {
+      "value": "right",
+      "label": "Right"
+    }
+  ],
+  "default": "center"
+},
+    {
+      "type": "color",
+      "label": "Start Color",
+      "id": "start_color"
+    },
+    {
+      "type": "color",
+      "label": "End Color",
+      "id": "end_color"
+    },
+    {
+      "type": "font_picker",
+      "label": "Font Family",
+      "id": "font_family",
+      "default": "sans-serif"
+    },
+    {
+      "type": "range",
+      "label": "Font Size (px)",
+      "id": "font_size",
+      "min": 10,
+      "max": 100,
+      "step": 1,
+      "default": 24
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Gradient Header",
+      "category": "Custom"
+    }
+  ]
+}
+
 {% endschema %}
