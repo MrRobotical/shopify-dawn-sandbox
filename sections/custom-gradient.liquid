@@ -9,7 +9,7 @@
   }
 </style>
   
-  <div class="testing" style="background-image: linear-gradient(to right, {{ section.settings.start_color }}, {{ section.settings.end_color }}); -webkit-background-clip: text; color: transparent; font-family: {{ section.settings.type_header_font }}; font-size: {{ section.settings.font_size }}px;text-align: {{ section.settings.title_alignment }};">
+  <div class="testing" style="background-image: linear-gradient(to right, {{ section.settings.start_color }}, {{ section.settings.end_color }}); -webkit-background-clip: text; color: transparent; font-family: {{ gradient_font }}; font-size: {{ section.settings.font_size }}px;text-align: {{ section.settings.title_alignment }};">
     {{ section.settings.header_title }}
   </div>
 
@@ -54,17 +54,12 @@
       "label": "End Color",
       "id": "end_color"
     },
-   {
-        "type": "header",
-        "content": "t:settings_schema.typography.settings.header__1.content"
-      },
-      {
-        "type": "font_picker",
-        "id": "type_header_font",
-        "default": "assistant_n4",
-        "label": "t:settings_schema.typography.settings.type_header_font.label",
-        "info": "t:settings_schema.typography.settings.type_header_font.info"
-      },
+    {
+      "type": "font_picker",
+      "label": "Font Family",
+      "id": "font_family",
+      "default": "sans-serif"
+    },
     {
       "type": "range",
       "label": "Font Size (px)",
