@@ -3,13 +3,9 @@
 {{ gradient_font | font_face }}
 
 
-{% style %}
-{{ gradient_font }}
-{% endstyle %}
-
 <style>
   .testing {
-     font-family: {{ gradient_font }};
+     font-family: {{ gradient_font.family }};
   }
 </style>
   
