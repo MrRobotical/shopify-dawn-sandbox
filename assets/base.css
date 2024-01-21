@@ -3766,3 +3766,8 @@ details-disclosure > details {
   background-color: #4CAF50; /* Green color for the progress */
   border-radius: 10px;
 }
+
+.testing {
+  {{ gradient_font | font_face }}, 
+}
+
