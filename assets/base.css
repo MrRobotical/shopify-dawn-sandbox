@@ -3768,6 +3768,6 @@ details-disclosure > details {
 }
 
 .testing {
-  {{ gradient_font | font_face }}, 
+  {{ gradient_font }}, 
 }
 
