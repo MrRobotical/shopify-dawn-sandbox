@@ -1,10 +1,10 @@
 {
   "sections": {
-    "jay_custom_tag_msg_4KRFyM": {
+    "jay_custom_tag_msg_ViL7Li": {
       "type": "jay-custom-tag-msg",
       "settings": {
-        "tag-name": "snow-tag, ski-tag, bindings-tag,",
-        "tag-text": "These Products have a 10$ Shipping fee because they are OVERSIZED!"
+        "tag-name": "tag-snow",
+        "tag-text": "Tgus us a snoboard product"
       }
     },
     "main": {
@@ -120,7 +120,7 @@
     }
   },
   "order": [
-    "jay_custom_tag_msg_4KRFyM",
+    "jay_custom_tag_msg_ViL7Li",
     "main",
     "related-products",
     "294f3a2d-9c3e-4613-b5c4-d95522251848"
