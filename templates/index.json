@@ -116,7 +116,8 @@
     "font_picker_basic_Hzw334": {
       "type": "font-picker-basic",
       "settings": {
-        "header_title": "Font Family"
+        "header_title": "Font Family",
+        "font_family_pick": "sans-serif"
       }
     },
     "1202f704-6b08-404e-8ffd-ec233fa491d0": {
@@ -126,7 +127,7 @@
         "title_alignment": "center",
         "start_color": "#17a2b0",
         "end_color": "#5917b0",
-        "font_family": "abril_fatface_n4",
+        "font_family": "amiri_n4",
         "font_size": 68
       }
     },
