@@ -123,12 +123,12 @@
     "1202f704-6b08-404e-8ffd-ec233fa491d0": {
       "type": "custom-gradient",
       "settings": {
-        "header_title": "This is a gradient",
+        "header_title": "THIS IS A GRADIENT",
         "title_alignment": "center",
-        "start_color": "#17a2b0",
-        "end_color": "#5917b0",
-        "font_family": "archivo_narrow_n4",
-        "font_size": 68
+        "start_color": "#12d4e7",
+        "end_color": "#b01717",
+        "font_family": "futura_n8",
+        "font_size": 36
       }
     },
     "77fc3470-daaf-401e-8a50-3bd413517c07": {
