@@ -1,9 +1,9 @@
 {
   "current": {
     "logo_width": 90,
-    "type_header_font": "futura_n4",
+    "type_header_font": "archivo_n4",
     "heading_scale": 100,
-    "type_body_font": "assistant_n4",
+    "type_body_font": "abril_fatface_n4",
     "body_scale": 100,
     "page_width": 1200,
     "spacing_sections": 0,
@@ -127,6 +127,11 @@
         "type": "main-password-footer",
         "settings": {
           "color_scheme": "background-1"
+        }
+      },
+      "jay-header": {
+        "type": "jay-header",
+        "settings": {
         }
       }
     },
