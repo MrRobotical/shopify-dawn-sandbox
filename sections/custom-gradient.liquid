@@ -1,13 +1,8 @@
 {% assign gradient_font = section.settings.font_family %}
 
-{{ gradient_font | font_face }}
 
 
-<style>
-  .testing {
-     font-family: {{ section.settings.font_family}};
-  }
-</style>
+
 
 
 <p>{{ section.settings.font_family.family }}</p>
@@ -16,6 +11,9 @@
     {{ section.settings.header_title }}
   </div>
 
+<style>
+ {{section.settings.font_family | font_face: font_display: 'swap'}}
+</style>
 
 
 
