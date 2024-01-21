@@ -1,8 +1,6 @@
-<p>{{ section.settings.font_family.family }}</p>
-  
-  <div style="background-image: linear-gradient(to right, {{ section.settings.start_color }}, {{ section.settings.end_color }}); -webkit-background-clip: text; color: transparent; font-size: {{ section.settings.font_size }}px;text-align: {{ section.settings.title_alignment }};">
-    {{ section.settings.header_title }}
-  </div>
+<div style="background-image: linear-gradient(to right, {{ section.settings.start_color }}, {{ section.settings.end_color }}); -webkit-background-clip: text; color: transparent; font-size: {{ section.settings.font_size }}px;text-align: {{ section.settings.title_alignment }};">
+  {{ section.settings.header_title }}
+</div>
 
 <style>
    {{section.settings.font_family | font_face: font_display: 'swap'}}
