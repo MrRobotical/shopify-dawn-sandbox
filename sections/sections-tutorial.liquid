@@ -1,5 +1,8 @@
 <div> {{ section.settings.rich_text }}</div>
 
+<h2> {{ section.settings.number_setting }}</h2>
+
+
 {% schema %}
   {
     "name": "Sections Tutorial",
@@ -8,6 +11,13 @@
         "type": "richtext",  
         "id": "rich_text",
         "label": "Rich Text"
+      },
+      {
+        "type": "number",  
+        "id": "number_setting",
+        "label": "Number Setting",
+        "placeholder": "This is the placeholder"
+        
       }
     ], 
     "presets": [
