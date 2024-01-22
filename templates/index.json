@@ -44,7 +44,11 @@
       "settings": {
         "rich_text": "<p><strong>This is a rich text section<\/strong><\/p>",
         "number_setting": 1078558,
-        "range_setting": 14
+        "range_setting": 14,
+        "select_setting": "value-1",
+        "checkbox_setting": true,
+        "radio_setting": "value_1",
+        "color_setting": "#f23737"
       }
     },
     "jay_custom_tests_UMcPA7": {
