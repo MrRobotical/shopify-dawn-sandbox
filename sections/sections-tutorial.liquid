@@ -4,6 +4,9 @@
 <h2>Number Settting:</h2>
 <p>{{ section.settings.number_setting }}</p>
 
+<h2>Range Settting:</h2>
+<p>{{ section.settings.range_setting_setting }}</p>
+
 
 {% schema %}
   {
@@ -20,6 +23,16 @@
         "label": "Number Setting",
         "placeholder": "This is the placeholder"
         
+      }, 
+      {
+        "type": "range",  
+        "id": "range_setting",
+        "label": "Range Setting",
+        "min": 0,
+        "max": 150,
+        "step": 2, 
+        "default": 12,
+        "unit": "px"
       }
     ], 
     "presets": [
