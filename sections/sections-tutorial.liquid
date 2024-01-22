@@ -22,7 +22,8 @@
 <h2>Color Settting:</h2>
 <p style="color: {{ section.settings.color_setting }}">{{ section.settings.color_setting }}</p>
 
-
+<h2>Color Background Settting:</h2>
+<p>{{ section.settings.color_background_setting }}</p>
 
 {% schema %}
   {
@@ -98,6 +99,11 @@
         "type": "color",  
         "id": "color_setting",
         "label": "Color Setting"
+      }, 
+      {
+        "type": "color_background",  
+        "id": "color_background_setting",
+        "label": "Color Background"
       }
     ], 
     "presets": [
