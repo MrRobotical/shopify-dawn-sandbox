@@ -33,6 +33,12 @@
   {{ section.settings.image_picker_setting | image_url: width: 400 | image_tag }}
 {% endif %}
 
+
+
+<div>
+  {{ section.settings.video_settings | video_tag: controls: true }}
+</div>
+
   
 {% schema %}
   {
@@ -118,6 +124,11 @@
         "type": "image_picker",  
         "id": "image_picker_setting",
         "label": "Image Picker"
+      },
+      {
+        "type": "video",  
+        "id": "video_setting",
+        "label": "Video Picker"
       }
     ], 
     "presets": [
