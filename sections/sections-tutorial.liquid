@@ -28,6 +28,8 @@
   <p>{{ section.settings.color_background_setting }}</p>
 </div>
 
+
+{{ section.settings.image_picker_setting | image_url: width: 400 | image_tag }}
   
 {% schema %}
   {
@@ -108,6 +110,11 @@
         "type": "color_background",  
         "id": "color_background_setting",
         "label": "Color Background"
+      },
+      {
+        "type": "image_picker",  
+        "id": "image_picker_setting",
+        "label": "Image Picker"
       }
     ], 
     "presets": [
