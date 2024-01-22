@@ -12,7 +12,12 @@
 <p>{{ section.settings.select_setting }}</p>
 
 <h2>Checkbox Settting:</h2>
-<p>{{ section.settings.checkbox_setting }}</p>
+{% if section.settings.checkbox_setting  %}
+  <p>The Checkbox is set to True}</p>
+  {% else %}
+  <p>The Checkbox is set to False}</p>
+{% endif %}
+  
 
 
 {% schema %}
