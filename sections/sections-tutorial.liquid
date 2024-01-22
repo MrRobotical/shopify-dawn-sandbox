@@ -22,21 +22,17 @@
 <h2>Color Settting:</h2>
 <p style="color: {{ section.settings.color_setting }}">{{ section.settings.color_setting }}</p>
 
-
 <div style="background:{{ section.settings.color_background_setting }}">
   <h2>Color Background Settting:</h2>
   <p>{{ section.settings.color_background_setting }}</p>
 </div>
 
-
 {% if section.settings.image_picker_setting %}
   {{ section.settings.image_picker_setting | image_url: width: 400 | image_tag }}
 {% endif %}
 
-
-
 <div>
-  {{ section.settings.video_settings | video_tag: controls: true }}
+  {{ section.settings.video_settings | video_tag: controls: true, style: "height: 500px; width: 500px" }}
 </div>
 
   
