@@ -48,7 +48,8 @@
         "select_setting": "value-1",
         "checkbox_setting": true,
         "radio_setting": "value_1",
-        "color_setting": "#37f294"
+        "color_setting": "#37f294",
+        "color_background_setting": "linear-gradient(207deg, rgba(23, 115, 176, 1) 7%, rgba(148, 88, 255, 1) 94%)"
       }
     },
     "jay_custom_tests_UMcPA7": {
