@@ -43,7 +43,8 @@
       "type": "sections-tutorial",
       "settings": {
         "rich_text": "<p><strong>This is a rich text section<\/strong><\/p>",
-        "number_setting": 1078558
+        "number_setting": 1078558,
+        "range_setting": 36
       }
     },
     "jay_custom_tests_UMcPA7": {
