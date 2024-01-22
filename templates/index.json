@@ -39,6 +39,12 @@
         "show_text_below": false
       }
     },
+    "sections_tutorial_HzarFb": {
+      "type": "sections-tutorial",
+      "settings": {
+        "rich_text": "<p><strong>This is a rich text section<\/strong><\/p>"
+      }
+    },
     "jay_custom_tests_UMcPA7": {
       "type": "jay-custom-tests",
       "blocks": {
@@ -243,6 +249,7 @@
   },
   "order": [
     "image_banner",
+    "sections_tutorial_HzarFb",
     "jay_custom_tests_UMcPA7",
     "featured_collection",
     "jay-carousel",
