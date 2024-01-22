@@ -18,9 +18,12 @@
   <p>The Checkbox is set to False</p>
 {% endif %}
 
-
 <h2>Radio Settting:</h2>
 <p>{{ section.settings.radio_setting }}</p>
+
+<h2>Color Settting:</h2>
+<p>{{ section.settings.color_setting }}</p>
+
 
 
 {% schema %}
@@ -92,6 +95,11 @@
             "label": "Value 3"
           } 
         ]
+      }, 
+      {
+        "type": "color",  
+        "id": "color_setting",
+        "label": "Color Setting"
       }
     ], 
     "presets": [
