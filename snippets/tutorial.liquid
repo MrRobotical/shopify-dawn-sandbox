@@ -98,9 +98,11 @@ This is a comment and should not render
 
 
 {% for product in collection.products %}
-  <p style="color: {% if forloop.first %} green 
+  <p style="
+    {% if forloop.first %} 
+      color: green 
     {% elsif forloop.last %}
-    color: orange
+      color: orange
     {% endif %}">
   {{ product.title }}
   </p>
