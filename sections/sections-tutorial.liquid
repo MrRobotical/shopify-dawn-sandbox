@@ -104,11 +104,16 @@
 
 
 <h2>Font Picker Setting:</h2>
-<div>
+<p>
 {{ section.settings.font_picker_setting.family }}
-</div>
+</p>
 
-
+<style>
+  {{section.settings.font_picker_setting | font_face: font_display: "swap"}}
+  .section-tutorial * {
+    font-family: {{section.settings.font_picker_setting.family}}
+  }
+</style>
 
 
 
@@ -135,6 +140,7 @@
 {% schema %}
   {
     "name": "Sections Tutorial",
+    "class": "section-tutorial",
     "settings": [
       {
         "type": "richtext",  
