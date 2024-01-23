@@ -2,8 +2,32 @@
   "type": "header",
   "name": "Demo Section Group",
   "sections": {
+    "sections_tutorial_KRiDf6": {
+      "type": "sections-tutorial",
+      "settings": {
+        "rich_text": "",
+        "range_setting": 12,
+        "select_setting": "value-1",
+        "checkbox_setting": true,
+        "radio_setting": "value_1",
+        "color_setting": "",
+        "color_background_setting": "",
+        "url_setting": "",
+        "html_setting": "",
+        "liquid_setting": "",
+        "product_setting": "",
+        "product_list_setting": [
+
+        ],
+        "collection_setting": "",
+        "collection_list_setting": [
+
+        ],
+        "font_picker_setting": "akko_n2"
+      }
+    }
   },
   "order": [
-
+    "sections_tutorial_KRiDf6"
   ]
 }
