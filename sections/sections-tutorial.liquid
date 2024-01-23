@@ -76,16 +76,15 @@
 
 
 <h2>Product List Setting:</h2>
-
 {% for product in section.settings.product_list_setting %}
 <p>
-  {{ section.settings.product_list_setting.title }}
+  {{ product.title }}
   <br>
-  {{ section.settings.product_list_setting.variants[0].price | money }}
+  {{ product.variants[0].price | money }}
     <br>
-  {{ section.settings.product_list_setting.type }}
+  {{ product.type }}
       <br>
-  {{ section.settings.product_list_setting.vendor }}
+  {{ product.vendor }}
 </p>
   {% endfor %}
 
