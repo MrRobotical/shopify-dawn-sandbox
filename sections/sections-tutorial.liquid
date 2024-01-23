@@ -62,7 +62,10 @@
 <div>
 {{ section.settings.liquid_setting }}
 </div>
-  
+
+<h2>Product Settting:</h2>
+<p>{{ section.settings.product_setting.title }}</p>
+
 {% schema %}
   {
     "name": "Sections Tutorial",
@@ -174,6 +177,11 @@
         "type": "liquid",  
         "id": "liquid_setting",
         "label": "Liquid setting"
+      },
+      {
+        "type": "product",  
+        "id": "product_setting",
+        "label": "Product setting"
       }
     ], 
     "presets": [
