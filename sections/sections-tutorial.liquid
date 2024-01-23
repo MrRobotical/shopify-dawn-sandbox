@@ -79,13 +79,13 @@
 
 {% for product in section.settings.product_list_setting %}
 <p>
-  {{ section.settings.product_setting.title }}
+  {{ section.settings.product_list_setting.title }}
   <br>
-  {{ section.settings.product_setting.variants[0].price | money }}
+  {{ section.settings.product_list_setting.variants[0].price | money }}
     <br>
-  {{ section.settings.product_setting.type }}
+  {{ section.settings.product_list_setting.type }}
       <br>
-  {{ section.settings.product_setting.vendor }}
+  {{ section.settings.product_list_setting.vendor }}
 </p>
   {% endfor %}
 
