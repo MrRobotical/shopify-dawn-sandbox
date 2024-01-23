@@ -97,7 +97,9 @@ This is a comment and should not render
   {% endcase %}
 
 
-
+{% for product in collecetion.products %}
+  <p>{{ product.title }}</p>
+  {% endfor %}
 
 
 
