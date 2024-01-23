@@ -32,15 +32,18 @@ This is a comment and should not render
 
 {{ product.tags.size }}
 
-
+<br>
 {% for tag in product.tags %}
   {{ tag }}
 {% endfor %}
 
+<br>
 
+{{ product.title }}
 
+{% assign html = <"<div"><p>Hello{{ product.title }}</p></div> %}
 
-
+{{ html }}
 
 
 
