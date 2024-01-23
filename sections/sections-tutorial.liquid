@@ -105,6 +105,11 @@
 
 
 
+
+
+
+
+
 <h2>All Brands output:</h2>
 {% assign vendors = '' %}
 
@@ -121,11 +126,6 @@
     <li>{{ vendor }}</li>
   {% endfor %}
 </ul>
-
-
-
-
-
 
 {% schema %}
   {
@@ -258,6 +258,12 @@
         "type": "collection_list",  
         "id": "collection_list_setting",
         "label": "Collection List Setting"
+      },
+        {
+        "type": "font_picker",  
+        "id": "font_picker_setting",
+        "label": "Font Picker Setting",
+        "default":"akko_n2"
       }
     ], 
     "presets": [
