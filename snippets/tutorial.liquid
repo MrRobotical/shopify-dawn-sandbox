@@ -76,8 +76,10 @@ This is a comment and should not render
   <p>This is a ski product!!!</p>
 {% endif %}
 
-
 {% unless product.tags contains "Premium" %}
 <p>The product does not contain Premium Tag</p>
 {% endunless %}
 
+{%  if product.title contains "Snowboard" and product.price < 65000 %}
+<p>This is an affordable Snowboard</p>
+{% endif %}
