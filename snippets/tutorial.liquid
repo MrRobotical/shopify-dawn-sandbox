@@ -85,3 +85,21 @@ This is a comment and should not render
 {% else %}
   <p>This is an expensive Snowboard</p>
 {% endif %}
+
+
+{% case product.type %}
+  {% when "snowboards" %}
+    <p>This is a snowboard</p>
+  {% when "skis" %}
+    <p>This is a ski</p>
+  {% endcase %}
+
+
+
+
+
+
+
+
+
+  
