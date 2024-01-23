@@ -52,10 +52,12 @@ This is a comment and should not render
 
 <br>
 
-{% assign myVariable = 11 %}
+{% assign myVariable = 7 %}
 
 {%  if myVariable > 10 %}
  <p> {{ myVariable }} is greater than 10 </p>
+ {% else %}
+  <p> {{ myVariable }} is not greater than 10 </p>
 {% endif %}
 
 
