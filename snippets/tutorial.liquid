@@ -41,7 +41,7 @@ This is a comment and should not render
 
 {% comment %}
 {{ product.title }}
-{% assign html = "<div><p>Hello{{ product.title }}</p></div>" %}
+{% assign html = "<div><p>Hello {{ product.title }}</p></div>" %}
 {{ html }}
 {% endcomment %}
 
