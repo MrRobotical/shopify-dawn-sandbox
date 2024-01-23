@@ -89,6 +89,20 @@
   {% endfor %}
 
 
+<h2>Collection Settting:</h2>
+<p>
+  {{ section.settings.collection_setting.title }}
+</p>
+
+
+<h2>Collection List Setting:</h2>
+{% for collection in section.settings.collection_list_setting %}
+<p>
+  {{ collection.title }}
+</p>
+  {% endfor %}
+
+
 
 
 
