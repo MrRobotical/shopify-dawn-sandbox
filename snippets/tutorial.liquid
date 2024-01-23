@@ -82,4 +82,6 @@ This is a comment and should not render
 
 {%  if product.title contains "Snowboard" and product.price < 40000 %}
 <p>This is an affordable Snowboard</p>
+{% else %}
+  <p>This is an expensive Snowboard</p>
 {% endif %}
