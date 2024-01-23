@@ -52,7 +52,7 @@ This is a comment and should not render
 
 <br>
 
-{% assign myVariable = 7 %}
+{% assign myVariable = 10 %}
 
 {%  if myVariable > 10 %}
  <p> {{ myVariable }} is greater than 10 </p>
@@ -61,6 +61,13 @@ This is a comment and should not render
 {% endif %}
 
 
+{% if myVariable == 10 %}
+<p> {{ myVariable }} is = to 10 </p>
+{% endif %}
 
+<p>{{ product.title }}</p>
+<p>{{ product.tags }}</p>
 
-
+{% if product.title contains "Snowboard" %}
+  <p>This is a snowboard</p>
+{% endif %}
