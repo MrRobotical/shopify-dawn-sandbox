@@ -50,6 +50,8 @@
 </div>
 
 
+<h2>URL Setting:</h2>
+<a href="{{ section.settings_url_setting }}">URL Settings</a>
   
 {% schema %}
   {
@@ -147,6 +149,11 @@
         "label": "Video URL Settings",
         "accept":["youtube", "vimeo"],
         "placeholder": "Youtube URL"
+      },
+       {
+        "type": "url",  
+        "id": "url_setting",
+        "label": "URL setting"
       }
     ], 
     "presets": [
