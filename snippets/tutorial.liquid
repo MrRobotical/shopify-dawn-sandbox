@@ -48,13 +48,15 @@ This is a comment and should not render
 {% capture html %}
     <div><p>Hello {{ product.title }}</p></div>
 {% endcapture %}
-
 {{ html }}
 
+<br>
 
+{% assign myVariable = 11 %}
 
-
-
+{%  if myVariable > 10 %}
+  {{ myVariable }}
+{% endif %}
 
 
 
