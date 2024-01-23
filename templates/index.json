@@ -55,7 +55,14 @@
         "url_setting": "shopify:\/\/products\/rossignol-experience-75-dark-skis-xelium-100-bindings-2016",
         "html_setting": "This will be bold",
         "liquid_setting": "{{ 10 | plus: 10 }}\n<br>\n{{ shop.name }}",
-        "product_setting": "rossignol-pursuit-12-ti-xelium-mens-skis-xel-110-b73-bindings-2015"
+        "product_setting": "rossignol-pursuit-12-ti-xelium-mens-skis-xel-110-b73-bindings-2015",
+        "product_list_setting": [
+          "k2-amp-72-mens-skis-flat-2015",
+          "volkl-rtm-84-uvo-skis-ipt-wide-ride-xl-12-0-bindings-2016",
+          "neff-amy-beanie-2015",
+          "burton-cartel-binding-2016",
+          "neff-men-s-character-mitt-2014"
+        ]
       }
     },
     "jay_custom_tests_UMcPA7": {
