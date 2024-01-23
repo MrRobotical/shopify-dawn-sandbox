@@ -54,7 +54,8 @@
         "video_url_setting": "https:\/\/www.youtube.com\/watch?v=3n5sWA2ow1Q&t=4273s",
         "url_setting": "shopify:\/\/products\/rossignol-experience-75-dark-skis-xelium-100-bindings-2016",
         "html_setting": "This will be bold",
-        "liquid_setting": "{{ 10 | plus: 10 }}\n<br>\n{{ shop.name }}"
+        "liquid_setting": "{{ 10 | plus: 10 }}\n<br>\n{{ shop.name }}",
+        "product_setting": "rossignol-pursuit-12-ti-xelium-mens-skis-xel-110-b73-bindings-2015"
       }
     },
     "jay_custom_tests_UMcPA7": {
