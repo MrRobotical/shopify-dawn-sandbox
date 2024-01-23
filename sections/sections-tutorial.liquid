@@ -103,8 +103,13 @@
   {% endfor %}
 
 
-
-
+<h2>All Brands output:</h2>
+{% assign all_vendors = shop.products | map: 'vendor' | uniq %}
+<ul>
+  {% for vendor in all_vendors %}
+    <li>{{ vendor }}</li>
+  {% endfor %}
+</ul>
 
 
 {% schema %}
