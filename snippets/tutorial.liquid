@@ -104,7 +104,7 @@ This is a comment and should not render
     {% elsif forloop.last %}
       color: orange
     {% endif %}">
-  {{ product.title }}
+  {{ forloop.index }}{{ product.title }}
   </p>
   
 {% endfor %}
