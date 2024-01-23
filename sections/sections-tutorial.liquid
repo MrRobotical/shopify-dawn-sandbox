@@ -104,13 +104,21 @@
 
 
 <h2>All Brands output:</h2>
-{% assign all_vendors = shop.products | map: 'vendor' | uniq %}
+{% assign vendors = '' %}
+
+{% for product in collections.all.products %}
+  {% unless vendors contains product.vendor %}
+    {% assign vendors = vendors | append: product.vendor | append: ',' %}
+  {% endunless %}
+{% endfor %}
+
+{% assign unique_vendors = vendors | split: ',' | uniq %}
+
 <ul>
-  {% for vendor in all_vendors %}
+  {% for vendor in unique_vendors %}
     <li>{{ vendor }}</li>
   {% endfor %}
 </ul>
-
 
 {% schema %}
   {
