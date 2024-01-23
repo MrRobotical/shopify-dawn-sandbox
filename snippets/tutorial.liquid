@@ -39,13 +39,17 @@ This is a comment and should not render
 
 <br>
 
+{% comment %}
 {{ product.title }}
-
 {% assign html = "<div><p>Hello{{ product.title }}</p></div>" %}
+{{ html }}
+{% endcomment %}
+
+{% capture html %}
+    <div><p>Hello{{ product.title }}</p></div>
+{% endcapture %}
 
 {{ html }}
-
-
 
 
 
