@@ -105,15 +105,13 @@ This is a comment and should not render
       color: orange
     {% endif %}">
   {{ forloop.index }} - {{ product.title }}
-  </p>
-  
+  </p> 
+  <ul>
+    {% for tag in product.tags %}
+      <li>{{ tag }}</li>
+    {% endfor %}
+  </ul>
 {% endfor %}
 
 
 
-
-
-
-
-
-  
