@@ -3,7 +3,7 @@
 {% for language in myNumbers %}
   {% assign languageName = language | split: "|" | first %}
   {% assign languageColor = language | split: "|" | last %}
-  <p style="color: {{ languageColor }}>{{ languageName }}</p>
+  <p style="color:{{ languageColor }}>{{ languageName }}</p>
 {% endfor %}
 
 
