@@ -1,4 +1,4 @@
-{% assign myNumbers= "html|Orange,CSS|blue,javascript|yellow" | split: ","  %}
+{% assign myNumbers= "html|Orange, CSS|blue, javascript|yellow" | split: ","  %}
 
 {% for language in myNumbers %}
   {% assign languageName = language | split: "|" | first %}
@@ -7,8 +7,8 @@
 {% endfor %}
 
 
-
-
+{%  assign products = collection.products %}
+{% assign productTitles = products | map: "title" %}
 
 
 
