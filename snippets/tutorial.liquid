@@ -108,7 +108,7 @@ This is a comment and should not render
   </p> 
   <h2>Tags:</h2>
   <ul>
-    {% for tag in product.tags %}
+    {% for tag in product.tags.size > 0 %}
       <li>{{ tag }}</li>
     {% endfor %}
   </ul>
