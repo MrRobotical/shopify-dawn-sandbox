@@ -1,3 +1,8 @@
+{% assign myNumbers= "1, 2, 3, 4" | split: ","  %}
+
+{% for number in myNumbers %}
+  <p>{{ number }}</p>
+{% endfor %}
 
 {% assign myNumber = '11' %}
 {% assign myNewNumber = myNumber | plus: 0 %}
