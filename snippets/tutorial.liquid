@@ -106,11 +106,13 @@ This is a comment and should not render
     {% endif %}">
   {{ forloop.index }} - {{ product.title }}
   </p> 
+  {% if product.tags.size > 0 %}
   <h2>Tags:</h2>
   <ul>
-    {% for tag in product.tags.size > 0 %}
-      <li>{{ tag }}</li>
+    {% for tag in product.tags %}
+      <li>Product Index: {{ forloop.parentloop.index }} | Tag: {{ tag }}</li>
     {% endfor %}
+  {% endif %}
   </ul>
 {% endfor %}
 
