@@ -1,3 +1,15 @@
+
+{%  assign muNumber = 10 %}
+
+{% assign myNewNumber = myNumber | plus: 5 %}
+
+{{ myNewNumber }}
+
+
+
+
+
+
 {% assign myVariable = "Hello World" %}
 {{ myVariable }}
 
@@ -118,13 +130,12 @@ This is a comment and should not render
 
 
 {% if collection.products %}
-{% paginate collection.products by 5 %}
-{% for product in collection.products %}
-<p>{{ product.title }}</p>
-  {% endfor %}
-
-  {{ paginate | default_pagination }} %}
-{% endpaginate %}
+  {% paginate collection.products by 5 %}
+  {% for product in collection.products %}
+  <p>{{ product.title }}</p>
+    {% endfor %}
+    {{ paginate | default_pagination }} %}
+  {% endpaginate %}
 {% endif %}
 
 
