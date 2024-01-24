@@ -1,8 +1,17 @@
-{% assign myNumbers= "1, 2, 3, 4" | split: ","  %}
+{% assign myNumbers= "html|Orange, CSS|blue, javascript|yellow" | split: ","  %}
 
-{% for number in myNumbers %}
-  <p>{{ number }}</p>
+{% for language in myNumbers %}
+  {% assign languageName = language | split: "|" | first %}
+  {% assign languageColor = language | split: "|" | last %}
+  <p style="color: {{ languageColor }}>{{ languageName }}</p>
 {% endfor %}
+
+
+
+
+
+
+
 
 {% assign myNumber = '11' %}
 {% assign myNewNumber = myNumber | plus: 0 %}
