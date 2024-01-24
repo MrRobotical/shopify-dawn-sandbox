@@ -9,6 +9,14 @@
 {% endif %}
 
 
+{{ assign moduloOfMyNumber = myNewNumber | modulo: 2  }}
+{%  if moduloOfMyNumner == 0 %}
+<p>Even</p>
+{% else %}
+<p>Odd</p>
+{% endif %}
+
+  
 <br>
 <br>
 <br>
