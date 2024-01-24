@@ -117,6 +117,7 @@ This is a comment and should not render
 {% endfor %}
 
 
+{% if collection.products %}
 {% paginate collection.products by 5 %}
 {% for product in collection.products %}
 <p>{{ product.title }}</p>
@@ -124,7 +125,7 @@ This is a comment and should not render
 
   {{ paginate | default_pagination }} %}
 {% endpaginate %}
-
+{% endif %}
 
 
 
